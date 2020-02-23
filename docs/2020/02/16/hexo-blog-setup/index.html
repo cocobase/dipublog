@@ -5,38 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/dipublog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/dipublog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/dipublog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/dipublog/images/logo.svg" color="#222">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/dipublog/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/dipublog/lib/font-awesome/css/font-awesome.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"cocobase.github.io","root":"/dipublog/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="修改文章底部的那个带#号的标签实现的效果 具体实现的方法 修改模板的配置文件_config.yml，找到其中的 tag_icon:false 修改成 true 开启标签菜单项缺省的状态下，博客网站导航菜单中只显示【首页】【归档】俩个菜单项目，为了增加【标签】菜单项目，可以按照如下操作：  在终端执行：hexo new page “tags”  修改Next皮肤模板的配置文件_config.yml，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo打造个人博客网站">
-<meta property="og:url" content="http://yoursite.com/2020/02/16/hexo-blog-setup/index.html">
+<meta property="og:url" content="https://cocobase.github.io/dipublog/2020/02/16/hexo-blog-setup/index.html">
 <meta property="og:site_name" content="安且吉兮之小镇递铺">
 <meta property="og:description" content="修改文章底部的那个带#号的标签实现的效果 具体实现的方法 修改模板的配置文件_config.yml，找到其中的 tag_icon:false 修改成 true 开启标签菜单项缺省的状态下，博客网站导航菜单中只显示【首页】【归档】俩个菜单项目，为了增加【标签】菜单项目，可以按照如下操作：  在终端执行：hexo new page “tags”  修改Next皮肤模板的配置文件_config.yml，">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/2020/02/16/hexo-blog-setup/xiaoguo.png">
-<meta property="og:image" content="http://yoursite.com/2020/02/16/hexo-blog-setup/xiaoguo-1.png">
+<meta property="og:image" content="https://cocobase.github.io/dipublog/2020/02/16/hexo-blog-setup/xiaoguo.png">
+<meta property="og:image" content="https://cocobase.github.io/dipublog/2020/02/16/hexo-blog-setup/xiaoguo-1.png">
 <meta property="article:published_time" content="2020-02-16T13:42:08.000Z">
 <meta property="article:modified_time" content="2020-02-16T14:11:53.978Z">
 <meta property="article:author" content="Hunter Huang">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/02/16/hexo-blog-setup/xiaoguo.png">
+<meta name="twitter:image" content="https://cocobase.github.io/dipublog/2020/02/16/hexo-blog-setup/xiaoguo.png">
 
-<link rel="canonical" href="http://yoursite.com/2020/02/16/hexo-blog-setup/">
+<link rel="canonical" href="https://cocobase.github.io/dipublog/2020/02/16/hexo-blog-setup/">
 
 
 <script id="page-configurations">
@@ -98,7 +98,7 @@
   <div class="site-meta">
 
     <div>
-      <a href="/" class="brand" rel="start">
+      <a href="/dipublog/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">安且吉兮之小镇递铺</span>
         <span class="logo-line-after"><i></i></span>
@@ -116,17 +116,17 @@
   <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+    <a href="/dipublog/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+    <a href="/dipublog/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+    <a href="/dipublog/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
   </ul>
@@ -155,10 +155,10 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/16/hexo-blog-setup/">
+    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/02/16/hexo-blog-setup/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/dipublog/images/avatar.gif">
       <meta itemprop="name" content="Hunter Huang">
       <meta itemprop="description" content="一个孤独的精神家园">
     </span>
@@ -187,7 +187,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                  <a href="/dipublog/categories/Hexo/" itemprop="url" rel="index">
                     <span itemprop="name">Hexo</span>
                   </a>
                 </span>
@@ -204,7 +204,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="修改文章底部的那个带-号的标签"><a href="#修改文章底部的那个带-号的标签" class="headerlink" title="修改文章底部的那个带#号的标签"></a>修改文章底部的那个带#号的标签</h2><p>实现的效果<img src="/2020/02/16/hexo-blog-setup/xiaoguo.png" class="" title="标签效果"></p>
+        <h2 id="修改文章底部的那个带-号的标签"><a href="#修改文章底部的那个带-号的标签" class="headerlink" title="修改文章底部的那个带#号的标签"></a>修改文章底部的那个带#号的标签</h2><p>实现的效果<img src="/dipublog/2020/02/16/hexo-blog-setup/xiaoguo.png" class="" title="标签效果"></p>
 <p>具体实现的方法</p>
 <p>修改模板的配置文件_config.yml，找到其中的 tag_icon:false 修改成 true</p>
 <h2 id="开启标签菜单项"><a href="#开启标签菜单项" class="headerlink" title="开启标签菜单项"></a>开启标签菜单项</h2><p>缺省的状态下，博客网站导航菜单中只显示【首页】【归档】俩个菜单项目，为了增加【标签】菜单项目，可以按照如下操作：</p>
@@ -220,7 +220,7 @@
 <li><p>编辑 hexo 配置文件 Directory 选项。检查一下名称是否对应。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Directory</span><br><span class="line">tag_dir: tags</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>实现的效果<img src="/2020/02/16/hexo-blog-setup/xiaoguo-1.png" class="" title="标签效果"></p>
+<li><p>实现的效果<img src="/dipublog/2020/02/16/hexo-blog-setup/xiaoguo-1.png" class="" title="标签效果"></p>
 </li>
 </ol>
 
@@ -233,7 +233,7 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
+              <a href="/dipublog/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
           </div>
 
         
@@ -242,11 +242,11 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/02/15/hello-image/" rel="prev" title="图片测试博客-Python资源归集">
+    <a href="/dipublog/2020/02/15/hello-image/" rel="prev" title="图片测试博客-Python资源归集">
       <i class="fa fa-chevron-left"></i> 图片测试博客-Python资源归集
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/02/16/hexo-with-git/" rel="next" title="Hexo站点部署到Github">
+    <a href="/dipublog/2020/02/16/hexo-with-git/" rel="next" title="Hexo站点部署到Github">
       Hexo站点部署到Github <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
@@ -320,7 +320,7 @@
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives/">
+          <a href="/dipublog/archives/">
         
           <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
@@ -331,7 +331,7 @@
         <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
-            <a href="/tags/">
+            <a href="/dipublog/tags/">
           
         <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
@@ -384,19 +384,19 @@
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
+  <script src="/dipublog/lib/anime.min.js"></script>
+  <script src="/dipublog/lib/velocity/velocity.min.js"></script>
+  <script src="/dipublog/lib/velocity/velocity.ui.min.js"></script>
 
-<script src="/js/utils.js"></script>
+<script src="/dipublog/js/utils.js"></script>
 
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
+<script src="/dipublog/js/motion.js"></script>
 
 
-<script src="/js/next-boot.js"></script>
+<script src="/dipublog/js/schemes/muse.js"></script>
+
+
+<script src="/dipublog/js/next-boot.js"></script>
 
 
 
