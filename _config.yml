@@ -13,8 +13,8 @@ timezone: 'Asia/shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://cocobase.github.io/dipublog
-root: /dipublog/
+url: https://cocobase.github.io/dipublog/
+root: /dipublog
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
