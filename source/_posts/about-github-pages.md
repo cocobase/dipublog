@@ -12,6 +12,7 @@ tags:
 - Github Pages网站的类型
 - GitHub Pages 站点的发布来源
 - 静态网站生成器
+<!-- more -->
 
 ## 了解Github Pages
 GitHub Pages是一个静态站点托管服务，可直接从GitHub上的存储库获取HTML，CSS和JavaScript文件，还可以选择在构建过程中运行这些文件并发布网站。您可以将站点托管在GitHub的github.io域或您自己的自定义域上。
