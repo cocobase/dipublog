@@ -176,10 +176,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-02-23 15:02:23 / 修改时间：20:22:17" itemprop="dateCreated datePublished" datetime="2020-02-23T15:02:23+08:00">2020-02-23</time>
+              <time title="创建时间：2020-02-23 15:02:23" itemprop="dateCreated datePublished" datetime="2020-02-23T15:02:23+08:00">2020-02-23</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-27 21:36:12" itemprop="dateModified" datetime="2020-02-27T21:36:12+08:00">2020-02-27</time>
+              </span>
 
           
 
@@ -192,7 +198,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><a href="https://yangbingdong.com/2017/note-of-learning-git/" target="_blank" rel="noopener">Git学习笔记</a>,图文并茂，利用图示极好地说明了Git本地和远程库之间的关系。</p>
+          <h2 id="GIT"><a href="#GIT" class="headerlink" title="GIT"></a>GIT</h2><p>Git本地和远程各种命令之间的关系图示  </p>
+<img src="/dipublog/2020/02/23/git-good-article/git-command.png" class="" title="git图示">   
+
+<p><a href="https://yangbingdong.com/2017/note-of-learning-git/" target="_blank" rel="noopener">Git学习笔记</a>  </p>
+<p><a href="http://www.amdoing.com/static-site-generator-hexo-gitbook-vuepress-and-so-on/" target="_blank" rel="noopener">静态网站生成器Hexo、Gitbook、Vuepress、Docsify、Docute、Nuxt</a>  </p>
+<p><a href="https://zhuanlan.zhihu.com/p/33350221" target="_blank" rel="noopener">使用 Nuxt.js 搭建静态博客</a>  </p>
+<p><a href="https://my.oschina.net/editorial-story/blog/1596258?nocache=1514944531873" target="_blank" rel="noopener">2017 年，最热开源静态网站生成器 TOP 20 揭晓</a>  </p>
+<p><a href="https://www.staticgen.com/" target="_blank" rel="noopener">网站静态生成器清单和热度比较</a><br><a href="https://cloud.tencent.com/developer/article/1142260" target="_blank" rel="noopener">Hexo优化 — 利用 Markdown 语法画流程图</a>  </p>
+<p>  Hexo MarkDown <a href="https://mecono.cn/2578632585.html" target="_blank" rel="noopener">语法示例</a><br>  特殊的流程图和序列图的显示和书写</p>
+<h2 id="VUE"><a href="#VUE" class="headerlink" title="VUE"></a>VUE</h2><p><a href="https://www.ctolib.com/mip/topics-143037.html?tt_from=copy_link&utm_source=copy_link&utm_medium=toutiao_ios&utm_campaign=client_share" target="_blank" rel="noopener">Vue友最爱的10个开箱即用的开源项目</a></p>
 
       
     </div>
@@ -393,7 +408,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-23 20:44:25" itemprop="dateModified" datetime="2020-02-23T20:44:25+08:00">2020-02-23</time>
+                <time title="修改时间：2020-02-24 19:07:29" itemprop="dateModified" datetime="2020-02-24T19:07:29+08:00">2020-02-24</time>
               </span>
 
           
@@ -424,25 +439,12 @@
 <li>新建一个git仓库</li>
 <li></li>
 </ol>
-<h2 id="将Hexo博客部署到GitHub-Pages"><a href="#将Hexo博客部署到GitHub-Pages" class="headerlink" title="将Hexo博客部署到GitHub Pages"></a>将Hexo博客部署到GitHub Pages</h2><p>Hexo是功能强大的静态网站生成器，可以和Github Pages结合使用以运行个人博客。这种配合可以帮助我们建立一个方便、高效且免费的博客平台。</p>
-<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p><a href="https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" target="_blank" rel="noopener">Github Pages</a> 内容可以来自于以下三个位置之一：</p>
-<ul>
-<li><username>.github.io 仓库分支</li>
-<li>gh-pages 存储库中的分支</li>
-<li>一个docs子目录</li>
-</ul>
-<p>现在的大多数教程都会让您根据第一个选项创建新的存储库。如果这样做，您发布的项目就会需要有两个存储库</p>
-<ul>
-<li>projectname (存储Hexo含有源代码文件夹、主题、配置文件等)</li>
-<li>websitename (由Hexo生成的静态网站名称，一般位于Hexo生成的博客站点目录下的public目录)</li>
-</ul>
-<p>默认情况下，Hexo会将内容生成到名为public的文件夹中。这个文件夹的名称可以通过配置文件_config.yml中的public_dir进行设置。我们可以方便地将目录名改为docs，这样我们就可以匹配在Gitpub Pages中规定的从一个存储库的docs子目录中获取内容。</p>
-<p>这种方式还有一个巨大的优点，就是允许您使用Github Pages上的不同存储库发布其它静态网站。</p>
-<p>但是，如果您仔细查看Github Pages文档，则会看到有一个限制：</p>
-<blockquote>
-<p>如果您的网站具有名为<username>.github.io 或者 <orgname>.github.io的存储库，您就无法从其它位置发布您的站点源文件。</p>
-</blockquote>
-<p>如果你在阅读文档时候眨眨眼就错过了这个提示，一旦你用户和组织的githu.io存储库，您就无法在其它任何存储库上使用docs/文件夹来发布内容。因此，您需要确保禁止使用用户和组织上的存储库。</p>
+<h2 id="链接Hexo-和-Git"><a href="#链接Hexo-和-Git" class="headerlink" title="链接Hexo 和 Git"></a>链接Hexo 和 Git</h2><ol>
+<li>配置Git的用户名和邮件地址</li>
+<li>配置公钥和私钥</li>
+<li>安装插件hexo-deploy-git</li>
+<li></li>
+</ol>
 <p><a href="https://zhuanlan.zhihu.com/p/58654392" target="_blank" rel="noopener">Hexo部署到阿里云</a></p>
 
       
@@ -870,7 +872,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-31 00:50:18" itemprop="dateModified" datetime="2020-01-31T00:50:18+08:00">2020-01-31</time>
+                <time title="修改时间：2020-02-27 21:28:37" itemprop="dateModified" datetime="2020-02-27T21:28:37+08:00">2020-02-27</time>
               </span>
 
           
@@ -897,6 +899,66 @@
 <h3 id="部署内容到远程的站点"><a href="#部署内容到远程的站点" class="headerlink" title="部署内容到远程的站点"></a>部署内容到远程的站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>更多信息参考： <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h3 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h3><ul>
+<li>分段：两个回车,注意：换行不是分段的标识，空行才是</li>
+<li>换行：两个空格加回车</li>
+<li>引用：&gt;<blockquote>
+<p>这是引用的文字效果和显示，如何分成两行</p>
+</blockquote>
+</li>
+<li>转义：针对&gt;需要转义的一些场合<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\&lt;</span><br><span class="line">&lt;</span><br><span class="line">&amp;#60;</span><br></pre></td></tr></table></figure></li>
+<li>标题：标题 # ~ ###### 井号的个数表示几级标题，即Markdown可以表示一级标题到六级标题</li>
+<li>列表：*，+， -，1. 四个任选其一都可以，注意后面的空格</li>
+<li>强调：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**文字**， __文字__, _文字_, *文字*, ~~删除文字~~</span><br></pre></td></tr></table></figure>
+效果：<strong>文字</strong>， <strong>文字</strong>, <em>文字</em>, <em>文字</em>, <del>删除文字</del></li>
+<li>图片的使用：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img xxxx.jpeg 图片说明文字 %&#125;</span><br></pre></td></tr></table></figure></li>
+<li>分级显示的代码和效果<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">+ Level1</span><br><span class="line">  + level2</span><br><span class="line">    + level3</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>Level1<ul>
+<li>level2<ul>
+<li>level3 </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>脚注</p>
+<p>为名词提供注释，注释将显示在文章末尾</p>
+<p>  语法：</p>
+<p>待解释文字[^脚注 id]</p>
+<p>[^脚注 id]:注释内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Hello World[^hello]</span><br><span class="line">[^hello]:你好, 世界</span><br></pre></td></tr></table></figure>
+<p>Hello World<a href="你好，世界">^hello</a>  </p>
+</li>
+</ul>
+<ul>
+<li>表格<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|姓名|年龄|性别|身高(cm)|  </span><br><span class="line">|-|:-|:-:|-:|  </span><br><span class="line">|张三|22|男|180|  </span><br><span class="line">|李四|18|女|165|</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th align="left">年龄</th>
+<th align="center">性别</th>
+<th align="right">身高(cm)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>张三</td>
+<td align="left">22</td>
+<td align="center">男</td>
+<td align="right">180</td>
+</tr>
+<tr>
+<td>李四</td>
+<td align="left">18</td>
+<td align="center">女</td>
+<td align="right">165</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
 
       
     </div>
