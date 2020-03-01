@@ -86,8 +86,8 @@ $ hexo deploy
   Hello World[^hello]
   [^hello]:你好, 世界
   ```
-  Hello World[^hello]  
-  [^hello]:你好，世界
+  Hello World[^hello]
+  [^hello]: 你好中文注释
 
 
 * 表格
@@ -101,3 +101,11 @@ $ hexo deploy
   |-|:-|:-:|-:|  
   |张三|22|男|180|  
   |李四|18|女|165|
+
+* 字体的进阶修改和显示
+    
+    <font face="黑体" color=green size=5>我是黑体，绿色，尺寸为5</font>
+    ```
+    <font face="黑体" color=green size=5>我是黑体，绿色，尺寸为5</font>
+    ```
+    
