@@ -22,6 +22,16 @@
   <meta name="msapplication-config" content="{{ url_for(theme.favicon.ms_browserconfig) }}">
 {%- endif %}
 
+<!-- SEO优化增加 -->
+{% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}" />
+{% elif page.tags and page.tags.length %}
+  <meta name="keywords" content="{% for tag in page.tags %}{{ tag.name }},{% endfor %}" />
+{% elif theme.keywords %}
+  <meta name="keywords" content="{{ theme.keywords }}" />
+{% endif %}
+<!-- SEO优化增加 -->
+
 {%- if theme.disable_baidu_transformation %}
   <meta http-equiv="Cache-Control" content="no-transform">
   <meta http-equiv="Cache-Control" content="no-siteapp">

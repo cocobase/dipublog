@@ -254,10 +254,14 @@ post_meta:
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
 symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
   separated_meta: true
   item_text_post: true
   item_text_total: false
-  awl: 4
+  awl: 2
   wpm: 275
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
@@ -473,7 +477,7 @@ seo: false
 
 # If true, site-subtitle will be added to index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)
-index_with_subtitle: false
+index_with_subtitle: true
 
 # Automatically add external URL with Base64 encrypt & decrypt.
 exturl: false

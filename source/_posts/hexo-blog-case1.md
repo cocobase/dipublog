@@ -10,3 +10,4 @@ tags: Hexo
 1. [Awesome Hexo，一个Hexo博客的专业资源列表](https://github.com/hexojs/awesome-hexo)
 2. [打造个性超赞博客 Hexo + NexT + GitHub Pages 的超深度优化](https://io-oi.me/tech/hexo-next-optimization/)
 3. [Hexo-next百度和谷歌搜索优化](http://www.ehcoo.com/seo.html)
+4. [如何优雅的选择字体(font-family)](https://segmentfault.com/a/1190000006110417)

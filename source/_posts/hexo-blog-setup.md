@@ -7,9 +7,9 @@ category: Hexo
 
 ## 修改文章底部的那个带#号的标签
 实现的效果{%  asset_image xiaoguo.png 标签效果%}
-  
+
 具体实现的方法
-  
+
 修改模板的配置文件_config.yml，找到其中的 tag_icon:false 修改成 true
 
 ## 开启标签菜单项
@@ -23,11 +23,11 @@ type: tags
 layout: "tags"
 ```
 重点关注layout选项的设置内容。里面的参数对应的是你主题文件夹下 layout 文件夹下第一级的布局文件。比如，我的主题是用 ejs 写的，那么对应的就是 layout/tags.ejs，如果没有，那么就会出现空白的现象！如果你的 tags 文件的命名时 a.ejs，那么你就应该写成 layout: "a"
-  
+
 4. 编辑 hexo 配置文件 Directory 选项。检查一下名称是否对应。
 ```
 # Directory
 tag_dir: tags
 ```
-   
+
 5. 实现的效果{%  asset_image xiaoguo-1.png 标签效果%}
