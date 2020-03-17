@@ -14,3 +14,10 @@ tags: [量化投资,仓位管理]
 
 ## 量化交易的网站
 1. 聚宽，国内量化平台的创导者，专注于金融量化工具和智能投顾的原创技术，是中国领先的金融科技公司。[JoinQuant](https://www.joinquant.com/)
+2. [BigQuant人工智能量化平台](https://bigquant.com)是四川的一家公司[宽邦科技](https://bigai.cn)运营的一个量化交易平台
+3. [知乎：史上最全Quant资源整理](https://zhuanlan.zhihu.com/p/26368398)的确是一个好东西，花了不少时间整理，值得学习。
+4. [优矿](https://uqer.io/)位于上海的一家机构
+
+## Data
+1. 美国国债收益率曲线[treasury yield curve](https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yieldYear&year=2020)
+2. Moody's Seasoned Baa Corporate Bond Yield (BAA)- [美国企业债数据](https://fred.stlouisfed.org/series/BAA)

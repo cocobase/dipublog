@@ -113,3 +113,6 @@ $ hexo deploy
     <font face="黑体" color=green size=5>我是黑体，绿色，尺寸为5</font>
     ```
     
+## 文章插入图片
+在/source目录下新建一个images文件夹，将图片放入该文件夹下，插入图片时链接即为’/images/图片名称’。比如\![example](/images/expamle.jpg)
+
