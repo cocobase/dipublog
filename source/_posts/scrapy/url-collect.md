@@ -7,5 +7,9 @@ tags:
     - Scrapy
 ---
 
-[Github开源项目模拟登录一些大型网站](https://github.com/Kr1s77/awesome-python-login-model)
-
+1. [Github开源项目模拟登录一些大型网站](https://github.com/Kr1s77/awesome-python-login-model)
+2. [谷歌Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb#scrollTo=5fCEDCU_qrC0)借助 Colaboratory（简称 Colab），您可在浏览器中编写和执行 Python 代码，并且：
+   * 无需任何配置
+   * 免费使用 GPU
+   * 轻松共享
+  无论您是一名学生、数据科学家还是 AI 研究员，Colab 都能够帮助您更轻松地完成工作。
