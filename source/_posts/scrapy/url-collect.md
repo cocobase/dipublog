@@ -13,3 +13,4 @@ tags:
    * 免费使用 GPU
    * 轻松共享
   无论您是一名学生、数据科学家还是 AI 研究员，Colab 都能够帮助您更轻松地完成工作。
+3. 一个从invest.com获取金融数据的库[investpy](https：//investpy.readthedocs.io/index.html)
