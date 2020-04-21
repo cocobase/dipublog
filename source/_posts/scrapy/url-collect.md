@@ -14,3 +14,4 @@ tags:
    * 轻松共享
   无论您是一名学生、数据科学家还是 AI 研究员，Colab 都能够帮助您更轻松地完成工作。
 3. 一个从invest.com获取金融数据的库[investpy](https：//investpy.readthedocs.io/index.html)
+4. 简书网站上关于Scrapy爬虫的[学习文档](https://www.jianshu.com/p/43029ea38251)

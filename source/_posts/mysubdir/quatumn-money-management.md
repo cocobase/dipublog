@@ -19,6 +19,8 @@ tags: [量化投资,仓位管理]
 3. [知乎：史上最全Quant资源整理](https://zhuanlan.zhihu.com/p/26368398)的确是一个好东西，花了不少时间整理，值得学习。
 4. [优矿](https://uqer.io/)位于上海的一家机构
 5. [同花顺量化交易](http://quant.10jqka.com.cn/platform/html/home.html)
+6. [米宽科技量化交易平台 ](https://www.ricequant.com/welcome/)
+
 
 ## Data
 1. 美国国债收益率曲线[treasury yield curve](https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yieldYear&year=2020)
