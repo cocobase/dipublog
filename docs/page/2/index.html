@@ -23,7 +23,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"cocobase.github.io","root":"/dipublog/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"cocobase.github.io","root":"/dipublog/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="一个孤独的精神家园和独立思考者">
@@ -133,9 +133,34 @@
     <a href="/dipublog/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 
 </nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
 </div>
     </header>
 
@@ -155,6 +180,804 @@
             
 
   <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/03/11/mysubdir/quatumn-money-management/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/dipublog/images/mylogo.png">
+      <meta itemprop="name" content="Hunter Huang">
+      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="安且吉兮">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/dipublog/2020/03/11/mysubdir/quatumn-money-management/" class="post-title-link" itemprop="url">量化投资的资金仓位管理策略</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-11 23:05:06" itemprop="dateCreated datePublished" datetime="2020-03-11T23:05:06+08:00">2020-03-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-21 15:33:46" itemprop="dateModified" datetime="2020-04-21T15:33:46+08:00">2020-04-21</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>408</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li><a href="https://www.zhihu.com/question/37913504/answer/707857767" target="_blank" rel="noopener">知乎文章：量化投资中有哪些仓位管理</a></li>
+<li><a href="https://www.jianshu.com/p/7afdd2700ce9" target="_blank" rel="noopener">主流量化投资策略与Smart Beta策略剖析</a>—文章有点深度。</li>
+<li><a href="https://www.imooc.com/read/13?mc_marking=eac701b9285ff17d6c6237fd509128f7&mc_channel=shouji" target="_blank" rel="noopener">慕课网：教你用 Python 进阶量化交易</a></li>
+<li><a href="https://blog.csdn.net/weixin_42219751/article/details/98197669" target="_blank" rel="noopener">量化经典问题——多因子选股模型</a></li>
+<li><a href="https://www.joinquant.com/view/community/detail/8ab44be934b049fb72a3e0881f922fde" target="_blank" rel="noopener">动态情景多因子Alpha模型</a></li>
+<li><a href="https://www.joinquant.com/view/community/detail/469e185e2c1967938290223520a6eb9d" target="_blank" rel="noopener">凯利公式，你用对了吗？利用该公式进行仓位管理是不错的思路</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/31799756" target="_blank" rel="noopener">Quantitative Finance 杂志关于量化交易领域排名前十的文章</a></li>
+</ol>
+<h2 id="量化交易的网站"><a href="#量化交易的网站" class="headerlink" title="量化交易的网站"></a>量化交易的网站</h2><ol>
+<li>聚宽，国内量化平台的创导者，专注于金融量化工具和智能投顾的原创技术，是中国领先的金融科技公司。<a href="https://www.joinquant.com/" target="_blank" rel="noopener">JoinQuant</a></li>
+<li><a href="https://bigquant.com" target="_blank" rel="noopener">BigQuant人工智能量化平台</a>是四川的一家公司<a href="https://bigai.cn" target="_blank" rel="noopener">宽邦科技</a>运营的一个量化交易平台</li>
+<li><a href="https://zhuanlan.zhihu.com/p/26368398" target="_blank" rel="noopener">知乎：史上最全Quant资源整理</a>的确是一个好东西，花了不少时间整理，值得学习。</li>
+<li><a href="https://uqer.io/" target="_blank" rel="noopener">优矿</a>位于上海的一家机构</li>
+<li><a href="http://quant.10jqka.com.cn/platform/html/home.html" target="_blank" rel="noopener">同花顺量化交易</a></li>
+<li><a href="https://www.ricequant.com/welcome/" target="_blank" rel="noopener">米宽科技量化交易平台 </a></li>
+</ol>
+<h2 id="Data"><a href="#Data" class="headerlink" title="Data"></a>Data</h2><ol>
+<li>美国国债收益率曲线<a href="https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yieldYear&year=2020" target="_blank" rel="noopener">treasury yield curve</a></li>
+<li>Moody’s Seasoned Baa Corporate Bond Yield (BAA)- <a href="https://fred.stlouisfed.org/series/BAA" target="_blank" rel="noopener">美国企业债数据</a></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/03/11/scrapy/data-sci-collect/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/dipublog/images/mylogo.png">
+      <meta itemprop="name" content="Hunter Huang">
+      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="安且吉兮">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/dipublog/2020/03/11/scrapy/data-sci-collect/" class="post-title-link" itemprop="url">数据集资源导航</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-03-11 20:25:02 / 修改时间：20:58:10" itemprop="dateCreated datePublished" datetime="2020-03-11T20:25:02+08:00">2020-03-11</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>606</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大数据处理的知识网站：<br>数据分析三剑客：Numpy、Pandas、Matplotlib  </p>
+<p><a href="https://www.pypandas.cn" target="_blank" rel="noopener">Pandas中文网、Pandas官方中文文档</a><br>Pandas是基于Numpy构建的库，在数据处理方面可以把它理解为numpy加强版，同时Pandas也是一项开源项目 。不同于numpy的是，pandas拥有种数据结构：Series和DataFrame  </p>
+<img src="/dipublog/2020/03/11/scrapy/data-sci-collect/panda-series.jpg" class="" title="pandas">
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/dipublog/2020/03/11/scrapy/data-sci-collect/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/03/08/scrapy/python-yield/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/dipublog/images/mylogo.png">
+      <meta itemprop="name" content="Hunter Huang">
+      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="安且吉兮">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/dipublog/2020/03/08/scrapy/python-yield/" class="post-title-link" itemprop="url">Python yield 的用法和意义解析</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-08 19:54:20" itemprop="dateCreated datePublished" datetime="2020-03-08T19:54:20+08:00">2020-03-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-11 20:54:24" itemprop="dateModified" datetime="2020-03-11T20:54:24+08:00">2020-03-11</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a href="https://www.zhihu.com/question/345210030/answer/841903171" target="_blank" rel="noopener">知乎：Python 的关键字 yield 有哪些用法和用途？</a>讲的相对透彻。<br><a href="https://zhuanlan.zhihu.com/p/32178981" target="_blank" rel="noopener">知乎：yield详解</a></p>
+<p>Python的生成器函数为数据和计算资源管理提供了强大的机制，但对于Python初学者而言，理解它们并非易事。<br>很多程序员都学过“惰性计算”以及如何写代码来实现这一操作。但Python语言本身就支持这种计算（只需一个关键词就可轻易实现），这种有效性和表达性在其他程序语言中非常罕见。所以，惰性计算这个概念被引入“拉达姆演算”，而Python尽管并非专门的功能语言（例如Lisp），也体现出功能编程的特性，也就不足为奇了，Python使用闭包函数也是拉达姆演算特性的一部分。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/dipublog/2020/03/08/scrapy/python-yield/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/03/08/scrapy/url-collect/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/dipublog/images/mylogo.png">
+      <meta itemprop="name" content="Hunter Huang">
+      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="安且吉兮">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/dipublog/2020/03/08/scrapy/url-collect/" class="post-title-link" itemprop="url">爬虫技术Scrapy框架网站收集</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-08 19:03:49" itemprop="dateCreated datePublished" datetime="2020-03-08T19:03:49+08:00">2020-03-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-13 20:42:06" itemprop="dateModified" datetime="2020-04-13T20:42:06+08:00">2020-04-13</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>190</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li><a href="https://github.com/Kr1s77/awesome-python-login-model" target="_blank" rel="noopener">Github开源项目模拟登录一些大型网站</a></li>
+<li><a href="https://colab.research.google.com/notebooks/intro.ipynb#scrollTo=5fCEDCU_qrC0" target="_blank" rel="noopener">谷歌Colaboratory</a>借助 Colaboratory（简称 Colab），您可在浏览器中编写和执行 Python 代码，并且：<ul>
+<li>无需任何配置</li>
+<li>免费使用 GPU</li>
+<li>轻松共享<br>无论您是一名学生、数据科学家还是 AI 研究员，Colab 都能够帮助您更轻松地完成工作。</li>
+</ul>
+</li>
+<li>一个从invest.com获取金融数据的库<a href="https：//investpy.readthedocs.io/index.html">investpy</a></li>
+<li>简书网站上关于Scrapy爬虫的<a href="https://www.jianshu.com/p/43029ea38251" target="_blank" rel="noopener">学习文档</a></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/03/05/vscode/vs-python/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/dipublog/images/mylogo.png">
+      <meta itemprop="name" content="Hunter Huang">
+      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="安且吉兮">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/dipublog/2020/03/05/vscode/vs-python/" class="post-title-link" itemprop="url">VSCode 和 Python 集成环境配置</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-03-05 19:39:12 / 修改时间：19:40:53" itemprop="dateCreated datePublished" datetime="2020-03-05T19:39:12+08:00">2020-03-05</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>18</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a href="https://code.visualstudio.com/docs/python/environments" target="_blank" rel="noopener">Vscode和Python结合的配置</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/03/02/mycss/flex/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/dipublog/images/mylogo.png">
+      <meta itemprop="name" content="Hunter Huang">
+      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="安且吉兮">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/dipublog/2020/03/02/mycss/flex/" class="post-title-link" itemprop="url">使用Flex做CSS布局的方法</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-02 21:09:21" itemprop="dateCreated datePublished" datetime="2020-03-02T21:09:21+08:00">2020-03-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-08 19:27:23" itemprop="dateModified" datetime="2020-03-08T19:27:23+08:00">2020-03-08</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>7 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>网页布局（layout）是 CSS 的一个重点应用。布局的传统解决方案，基于盒状模型，依赖 display 属性 + position属性 + float属性。它对于那些特殊布局非常不方便，比如，垂直居中就不容易实现。</p>
+<img src="/dipublog/2020/03/02/mycss/flex/flex1.gif" class="" title="Flex布局"> 
+<p>2009年，W3C 提出了一种新的方案—-Flex 布局，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持，这意味着，现在就能很安全地使用这项功能。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/dipublog/2020/03/02/mycss/flex/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/03/01/mysubdir/s1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/dipublog/images/mylogo.png">
+      <meta itemprop="name" content="Hunter Huang">
+      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="安且吉兮">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/dipublog/2020/03/01/mysubdir/s1/" class="post-title-link" itemprop="url">Hexo子目录下生成文章</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-01 21:18:21" itemprop="dateCreated datePublished" datetime="2020-03-01T21:18:21+08:00">2020-03-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-17 22:34:03" itemprop="dateModified" datetime="2020-03-17T22:34:03+08:00">2020-03-17</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>610</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="日本保健品行业洞察"><a href="#日本保健品行业洞察" class="headerlink" title="日本保健品行业洞察"></a>日本保健品行业洞察</h2><div class="pdf" target="./japanese-baojian.pdf" height=""></div>
+
+<h2 id="测试子目录管理文章"><a href="#测试子目录管理文章" class="headerlink" title="测试子目录管理文章"></a>测试子目录管理文章</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;文章名&quot; -p subdir-name&#x2F;file-name</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><a href="https://zhuanlan.zhihu.com/p/38279377" target="_blank" rel="noopener">凯利公式，从赌场到量化投资</a></li>
+<li><a href="https://www.myquant.cn" target="_blank" rel="noopener">掘金量化</a></li>
+</ol>
+<h2 id="设置标签"><a href="#设置标签" class="headerlink" title="设置标签"></a>设置标签</h2><p>在编辑文章的时候，tags:后面是设置标签的地方，如果有多个标签的话，可以用下面两种办法来设置：<br>第一种：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tags: [标签1,标签2,...标签n]</span><br></pre></td></tr></table></figure>
+<p>第二种：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> tages: </span><br><span class="line">- 标签1</span><br><span class="line">- 标签2</span><br><span class="line">...</span><br><span class="line">- 标签n</span><br></pre></td></tr></table></figure>
+
+<h2 id="设置分类列表"><a href="#设置分类列表" class="headerlink" title="设置分类列表"></a>设置分类列表</h2><p>在我们编辑文章的时候，直接在categories:项填写属于哪个分类，但如果分类是中文的时候，路径也会包含中文。</p>
+<p>比如分类我们设置的是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">categories: 开车</span><br></pre></td></tr></table></figure>
+<p>那在生成页面后，分类列表就会出现开车这个选项，他的访问路径是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*&#x2F;categories&#x2F;开车</span><br></pre></td></tr></table></figure>
+<p>我们都知道，有时候中文路径可能会出现一些奇奇怪怪的问题，所以我们需要路径名和分类名分别设置。</p>
+<p>打开站点配置文件_config.yml，找到如下位置做更改：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Category &amp; Tag</span><br><span class="line">default_category: uncategorized</span><br><span class="line">category_map:</span><br><span class="line">    开车: drive</span><br><span class="line">    生活: life</span><br><span class="line">    其他: other</span><br><span class="line">tag_map:</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+</blockquote>
+<p>在这里category_map:是设置分类的地方，每行一个分类，冒号前面是分类名称，后面是访问路径。可以提前在这里设置好一些分类，当编辑的文章填写了对应的分类名时，就会自动的按照对应的路径来访问。</p>
+<blockquote>
+</blockquote>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/02/28/Vue-study/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/dipublog/images/mylogo.png">
+      <meta itemprop="name" content="Hunter Huang">
+      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="安且吉兮">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/dipublog/2020/02/28/Vue-study/" class="post-title-link" itemprop="url">Vue学习笔记</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-28 21:25:23" itemprop="dateCreated datePublished" datetime="2020-02-28T21:25:23+08:00">2020-02-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-01 20:47:25" itemprop="dateModified" datetime="2020-03-01T20:47:25+08:00">2020-03-01</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>155</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="下载安装Vue的开发环境"><a href="#下载安装Vue的开发环境" class="headerlink" title="下载安装Vue的开发环境"></a>下载安装Vue的开发环境</h2><p>  基础需要：一个一个到官方网站根据要求在系统中安装。</p>
+<ul>
+<li>node.js <a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">node官方网站</a></li>
+<li>cnpm <a href="http://npm.taobao.org" target="_blank" rel="noopener">淘宝npm中国镜像网站</a></li>
+<li>vue <a href="https://cn.vuejs.org" target="_blank" rel="noopener">vue官方网站</a></li>
+<li>vue-cli <a href="https://cli.vuejs.org/zh/" target="_blank" rel="noopener">Vue.js 开发的标准工具</a></li>
+</ul>
+<h2 id="初始化一个vue项目"><a href="#初始化一个vue项目" class="headerlink" title="初始化一个vue项目"></a>初始化一个vue项目</h2><p>  命令行执行：vue init webpack todo-vue 初始化一个名称为 todo-vue的项目。<br>  <img src="/dipublog/2020/02/28/Vue-study/vue-init-dir.png" class="" title="项目的目录结构图">  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/02/23/git-good-article/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/dipublog/images/mylogo.png">
+      <meta itemprop="name" content="Hunter Huang">
+      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="安且吉兮">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/dipublog/2020/02/23/git-good-article/" class="post-title-link" itemprop="url">Git精选文章</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-23 15:02:23" itemprop="dateCreated datePublished" datetime="2020-02-23T15:02:23+08:00">2020-02-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-27 21:36:12" itemprop="dateModified" datetime="2020-02-27T21:36:12+08:00">2020-02-27</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>207</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="GIT"><a href="#GIT" class="headerlink" title="GIT"></a>GIT</h2><p>Git本地和远程各种命令之间的关系图示  </p>
+<img src="/dipublog/2020/02/23/git-good-article/git-command.png" class="" title="git图示">   
+
+<p><a href="https://yangbingdong.com/2017/note-of-learning-git/" target="_blank" rel="noopener">Git学习笔记</a>  </p>
+<p><a href="http://www.amdoing.com/static-site-generator-hexo-gitbook-vuepress-and-so-on/" target="_blank" rel="noopener">静态网站生成器Hexo、Gitbook、Vuepress、Docsify、Docute、Nuxt</a>  </p>
+<p><a href="https://zhuanlan.zhihu.com/p/33350221" target="_blank" rel="noopener">使用 Nuxt.js 搭建静态博客</a>  </p>
+<p><a href="https://my.oschina.net/editorial-story/blog/1596258?nocache=1514944531873" target="_blank" rel="noopener">2017 年，最热开源静态网站生成器 TOP 20 揭晓</a>  </p>
+<p><a href="https://www.staticgen.com/" target="_blank" rel="noopener">网站静态生成器清单和热度比较</a><br><a href="https://cloud.tencent.com/developer/article/1142260" target="_blank" rel="noopener">Hexo优化 — 利用 Markdown 语法画流程图</a>  </p>
+<p>  Hexo MarkDown <a href="https://mecono.cn/2578632585.html" target="_blank" rel="noopener">语法示例</a><br>  特殊的流程图和序列图的显示和书写</p>
+<h2 id="VUE"><a href="#VUE" class="headerlink" title="VUE"></a>VUE</h2><p><a href="https://www.ctolib.com/mip/topics-143037.html?tt_from=copy_link&utm_source=copy_link&utm_medium=toutiao_ios&utm_campaign=client_share" target="_blank" rel="noopener">Vue友最爱的10个开箱即用的开源项目</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
         
   
   
@@ -199,14 +1022,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span></span>
+              <span>1.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>NaN:aN</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -247,824 +1070,11 @@
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/02/18/hexo-blog-case1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/dipublog/images/mylogo.png">
-      <meta itemprop="name" content="Hunter Huang">
-      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="安且吉兮">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/dipublog/2020/02/18/hexo-blog-case1/" class="post-title-link" itemprop="url">Hexo博客站点收集</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-18 00:42:55" itemprop="dateCreated datePublished" datetime="2020-02-18T00:42:55+08:00">2020-02-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-17 22:12:45" itemprop="dateModified" datetime="2020-03-17T22:12:45+08:00">2020-03-17</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>453</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.  </p>
-<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>  
-
-<p>以上是关于引用语句的特别用法  </p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">  </span><br><span class="line">[rectangle setX: <span class="number">10</span> y: <span class="number">10</span> width: <span class="number">20</span> height: <span class="number">20</span>];  </span><br></pre></td></tr></table></figure>  
-
-
-<img src="/dipublog/2020/02/18/hexo-blog-case1/blog-list.png" class="" title="博客内容">
-
-<h2 id="收集的关于Hexo-和-NexT主题的相关比较有价值的文章，提供给需要学习技巧的人看看。"><a href="#收集的关于Hexo-和-NexT主题的相关比较有价值的文章，提供给需要学习技巧的人看看。" class="headerlink" title="收集的关于Hexo 和 NexT主题的相关比较有价值的文章，提供给需要学习技巧的人看看。"></a>收集的关于Hexo 和 NexT主题的相关比较有价值的文章，提供给需要学习技巧的人看看。</h2><ol>
-<li><a href="https://github.com/hexojs/awesome-hexo" target="_blank" rel="noopener">Awesome Hexo，一个Hexo博客的专业资源列表</a></li>
-<li><a href="https://io-oi.me/tech/hexo-next-optimization/" target="_blank" rel="noopener">打造个性超赞博客 Hexo + NexT + GitHub Pages 的超深度优化</a></li>
-<li><a href="http://www.ehcoo.com/seo.html" target="_blank" rel="noopener">Hexo-next百度和谷歌搜索优化</a></li>
-<li><a href="https://segmentfault.com/a/1190000006110417" target="_blank" rel="noopener">如何优雅的选择字体(font-family)</a></li>
-<li><a href="http://theme-next.iissnan.com" target="_blank" rel="noopener">NexT主题的设置和配置</a>专门讲述这个主题的问题，学习和进阶配置</li>
-<li><a href="https://segmentfault.com/a/1190000009544924" target="_blank" rel="noopener">segmentfault: hexo的next主题个性化配置教程</a></li>
-<li><a href="http://blog.fiftykg.com/hexo/hexo-next-主题持续升级-更新方案.html" target="_blank" rel="noopener">hexo next 主题持续升级/更新方案</a></li>
-<li><a href="https://www.jianshu.com/p/4f9fc8aafe15" target="_blank" rel="noopener">hexo高阶教程：教你怎么让你的hexo博客在搜索引擎中排第一</a></li>
-<li><a href="https://www.dazhuanlan.com/2019/12/16/5df69eba9ed3c/" target="_blank" rel="noopener">hexo常见问的解决</a></li>
-<li><a href="https://wiki.jikexueyuan.com/project/hexo-document/" target="_blank" rel="noopener">Hexo中文开发手册</a>国人整理，写的比官方文档易懂一些</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/02/16/hexo-with-git/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/dipublog/images/mylogo.png">
-      <meta itemprop="name" content="Hunter Huang">
-      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="安且吉兮">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/dipublog/2020/02/16/hexo-with-git/" class="post-title-link" itemprop="url">Hexo站点部署到Github</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-16 22:18:59" itemprop="dateCreated datePublished" datetime="2020-02-16T22:18:59+08:00">2020-02-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-24 19:07:29" itemprop="dateModified" datetime="2020-02-24T19:07:29+08:00">2020-02-24</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span></span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>NaN:aN</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="参考阅读的材料"><a href="#参考阅读的材料" class="headerlink" title="参考阅读的材料"></a>参考阅读的材料</h2><ul>
-<li><a href="https://www.jianshu.com/p/cb0750324e26" target="_blank" rel="noopener">使用Hexo搭建GitHub博客（2018年Mac版）</a></li>
-<li><a href="https://www.jianshu.com/p/c07ccdfba068" target="_blank" rel="noopener">用Hexo-nexT-GitHub搭建个人博客</a> -文章很长，其中对Git的命令对不同位置仓库的影响图示很清晰。</li>
-<li><a href="https://www.jianshu.com/p/efaf72aab32e" target="_blank" rel="noopener">Hexo 博客从搭建部署到SEO优化等详细教程</a></li>
-<li><a href="https://master--epic-hypatia-977c29.netlify.com/2018/08/25/hexo-learn" target="_blank" rel="noopener">hexo高级部署教程,利用github+netlify部署</a> 这里讲了需要用多分支的问题，很有道理</li>
-<li><a href="https://yangbingdong.com/2017/build-blog-hexo-advanced/" target="_blank" rel="noopener">基于Hexo搭建个人博客——进阶篇(从入门到入土)</a> 谈到了关于文章加密访问的方法；主页文章添加阴影效果；SEO优化内容；</li>
-</ul>
-<h2 id="本地环境的配置安装"><a href="#本地环境的配置安装" class="headerlink" title="本地环境的配置安装"></a>本地环境的配置安装</h2><ol>
-<li>在本地安装git</li>
-<li>在本地安装好HEXO的基础环境Node.js</li>
-<li>在本地安装Hexo</li>
-</ol>
-<h2 id="准备好Github的账户以及相关信息"><a href="#准备好Github的账户以及相关信息" class="headerlink" title="准备好Github的账户以及相关信息"></a>准备好Github的账户以及相关信息</h2><ol>
-<li>注册github网站的账户</li>
-<li>新建一个git仓库</li>
-<li></li>
-</ol>
-<h2 id="链接Hexo-和-Git"><a href="#链接Hexo-和-Git" class="headerlink" title="链接Hexo 和 Git"></a>链接Hexo 和 Git</h2><ol>
-<li>配置Git的用户名和邮件地址</li>
-<li>配置公钥和私钥</li>
-<li>安装插件hexo-deploy-git</li>
-<li></li>
-</ol>
-<p><a href="https://zhuanlan.zhihu.com/p/58654392" target="_blank" rel="noopener">Hexo部署到阿里云</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/02/16/hexo-blog-setup/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/dipublog/images/mylogo.png">
-      <meta itemprop="name" content="Hunter Huang">
-      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="安且吉兮">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/dipublog/2020/02/16/hexo-blog-setup/" class="post-title-link" itemprop="url">Hexo打造个人博客网站</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-16 21:42:08" itemprop="dateCreated datePublished" datetime="2020-02-16T21:42:08+08:00">2020-02-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-14 08:35:00" itemprop="dateModified" datetime="2020-03-14T08:35:00+08:00">2020-03-14</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/dipublog/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>530</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="修改文章底部的那个带-号的标签"><a href="#修改文章底部的那个带-号的标签" class="headerlink" title="修改文章底部的那个带#号的标签"></a>修改文章底部的那个带#号的标签</h2><p>实现的效果<img src="/dipublog/2020/02/16/hexo-blog-setup/xiaoguo.png" class="" title="标签效果"></p>
-<p>具体实现的方法</p>
-<p>修改模板的配置文件_config.yml，找到其中的 tag_icon:false 修改成 true</p>
-<h2 id="开启标签菜单项"><a href="#开启标签菜单项" class="headerlink" title="开启标签菜单项"></a>开启标签菜单项</h2><p>缺省的状态下，博客网站导航菜单中只显示【首页】【归档】俩个菜单项目，为了增加【标签】菜单项目，可以按照如下操作：</p>
-<ol>
-<li><p>在终端执行：hexo new page “tags”</p>
-</li>
-<li><p>修改Next皮肤模板的配置文件_config.yml，找到其中的 #tags: /tags/ || tags，将前面的 # 注释符号去掉。严重提醒：在冒号和/之间一定要有空格。</p>
-</li>
-<li><p>编辑tags/index.md文件，内容如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: &quot;tags&quot;</span><br><span class="line">type: tags</span><br><span class="line">layout: &quot;tags&quot;</span><br></pre></td></tr></table></figure>
-<p>重点关注layout选项的设置内容。里面的参数对应的是你主题文件夹下 layout 文件夹下第一级的布局文件。比如，我的主题是用 ejs 写的，那么对应的就是 layout/tags.ejs，如果没有，那么就会出现空白的现象！如果你的 tags 文件的命名时 a.ejs，那么你就应该写成 layout: “a”</p>
-</li>
-<li><p>编辑 hexo 配置文件 Directory 选项。检查一下名称是否对应。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Directory</span><br><span class="line">tag_dir: tags</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>实现的效果<img src="/dipublog/2020/02/16/hexo-blog-setup/xiaoguo-1.png" class="" title="标签效果"></p>
-</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/02/15/hello-image/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/dipublog/images/mylogo.png">
-      <meta itemprop="name" content="Hunter Huang">
-      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="安且吉兮">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/dipublog/2020/02/15/hello-image/" class="post-title-link" itemprop="url">图片测试博客-Python资源归集</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-15 21:42:08" itemprop="dateCreated datePublished" datetime="2020-02-15T21:42:08+08:00">2020-02-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-27 21:36:49" itemprop="dateModified" datetime="2020-02-27T21:36:49+08:00">2020-02-27</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/dipublog/categories/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
-                  </a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span></span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>NaN:aN</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="一图一世界"><a href="#一图一世界" class="headerlink" title="一图一世界"></a>一图一世界</h2><img src="/dipublog/2020/02/15/hello-image/green-leaf.jpeg" class="" title="图片在哪里"> 
-
-<p>关于图片的说明和解释可以在这里。</p>
-<p>今天看了很多关于<a href="https://lianzhaowen.github.io/p/1901963984.html" target="_blank" rel="noopener">博客网站架设流程</a>的文章。也是自己尝试Hexo的主要原因。</p>
-<ul>
-<li><a href="http://xyua.top/Hexo/hexo_next_blog.html" target="_blank" rel="noopener">Hexo+NexT 打造一个炫酷博客</a></li>
-<li><a href="https://github.com/huiwang/hexo-recommended-posts" target="_blank" rel="noopener">Hexo跨博客文章推荐插件</a></li>
-<li><a href="https://blog.uuk4.com/" target="_blank" rel="noopener">平凡的网站</a>包含了<a href="https://blog.uuk4.com/2019/05/09/hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/" target="_blank" rel="noopener">插入数学公式的问题</a></li>
-<li><a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">遇见西门网站：最全Hexo博客搭建+主题优化+插件配置+常用操作+错误分析</a></li>
-<li><a href="https://www.jianshu.com/p/f054333ac9e6" target="_blank" rel="noopener">简书文章：hexo的next主题个性化教程:打造炫酷网站</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">知乎：GitHub+Hexo 搭建个人网站详细教程</a></li>
-</ul>
-<h2 id="Python的资源归集"><a href="#Python的资源归集" class="headerlink" title="Python的资源归集"></a>Python的资源归集</h2><p><a href="https://awesome-python.com/#algorithms-and-design-patterns" target="_blank" rel="noopener">Awesome Python</a>是一个关于Python框架、库、软件和资源的专业分类列表，经过精心挑选和维护在Github上发布</p>
-<h2 id="强大的Hexo皮肤模板"><a href="#强大的Hexo皮肤模板" class="headerlink" title="强大的Hexo皮肤模板"></a>强大的Hexo皮肤模板</h2><p><a href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/README.md" target="_blank" rel="noopener">hexo-theme-nexT</a></p>
-<ul>
-<li>采用了这个模板的网站样式 <a href="https://leaferx.online/2019/09/03/cornerstone-2-unicode/" target="_blank" rel="noopener">Leafer X LAB</a></li>
-<li>还有这个<a href="https://theme-next.org/" target="_blank" rel="noopener">nexT Theme for Hexo</a></li>
-</ul>
-<h2 id="Python的博客系统"><a href="#Python的博客系统" class="headerlink" title="Python的博客系统"></a>Python的博客系统</h2><p><a href="https://github.com/OhYee/OBlog" target="_blank" rel="noopener">OBlog</a> 是基于flask的博客系统，后端使用了flask、jieba、sqlite3 前端使用了Vue.js、jquery、bootstrap、highlight.js、lightbox.js、waterfall.js、mathjax.js 。但是作者比较懒，很久没有更新并持续优化了。markdown是自己写的渲染器</p>
-<h2 id="忍不住要记录"><a href="#忍不住要记录" class="headerlink" title="忍不住要记录"></a>忍不住要记录</h2><p><a href="https://yihui.org" target="_blank" rel="noopener">谢益辉的个人主页</a><br><a href="https://github.com/chinese-poetry/chinese-poetry" target="_blank" rel="noopener">chinese-poetry: 最全中文诗歌古典文集数据库</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/02/15/hexo-image-markdown/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/dipublog/images/mylogo.png">
-      <meta itemprop="name" content="Hunter Huang">
-      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="安且吉兮">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/dipublog/2020/02/15/hexo-image-markdown/" class="post-title-link" itemprop="url">Hexo中的Markdown文件里图片的显示问题</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-02-15 20:00:00 / 修改时间：23:05:58" itemprop="dateCreated datePublished" datetime="2020-02-15T20:00:00+08:00">2020-02-15</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span></span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>NaN:aN</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>hexo的博客系统默认无法自动处理文章中插入本地图片的问题。需要通过扩展的插件来完成图片支持。</p>
-<h2 id="图片路径设置"><a href="#图片路径设置" class="headerlink" title="图片路径设置"></a>图片路径设置</h2><p>配置_config.yml文件里面的 post_asset_folder:false 这个选项为 true。</p>
-<p>安装<a href="https://github.com/7ym0n/hexo-asset-image" target="_blank" rel="noopener">hexo-asset-image</a>插件，运行hexo n “xxx”来生成新的博客文章时候，/source/_posts文件夹内除了 xxx.md文件之外，还会有一个同名的文件夹，把需要在md文件中显示的图片放入该文件夹。使用!就可以插入图片。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
-
-<p>如果觉得速度太慢，可以从淘宝的镜像站点，cnpm站点安装该插件的程序包。前提是你要安装好了<a href="https://npm.taobao.org" target="_blank" rel="noopener">cnpm</a>。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
-
-<h2 id="hexo-asset-image插件的问题"><a href="#hexo-asset-image插件的问题" class="headerlink" title="hexo-asset-image插件的问题"></a>hexo-asset-image插件的问题</h2><p>由于hexo3版本后对很多插件支持有问题，hexo-asset-image插件在处理data.permalink链接时出现路径错误，把年月去掉了，导致最后生成的路径为%d/xxx/xxx需要对其做兼容处理。通过判断当前版本是否等于3的版本做不同的路径分割。</p>
-<h2 id="该方法经过尝试存在BUG，不建议使用"><a href="#该方法经过尝试存在BUG，不建议使用" class="headerlink" title="该方法经过尝试存在BUG，不建议使用"></a>该方法经过尝试存在BUG，不建议使用</h2><p>参考另外一个博客中图片的使用方法【图片测试博客】<a href="/dipublog/2020/02/15/hello-image/" title="图片测试文章">图片测试文章</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/01/31/clone-hexo-project-to-local/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/dipublog/images/mylogo.png">
-      <meta itemprop="name" content="Hunter Huang">
-      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="安且吉兮">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/dipublog/2020/01/31/clone-hexo-project-to-local/" class="post-title-link" itemprop="url">clone hexo project to local</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-31 01:33:51" itemprop="dateCreated datePublished" datetime="2020-01-31T01:33:51+08:00">2020-01-31</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-16 11:13:15" itemprop="dateModified" datetime="2020-02-16T11:13:15+08:00">2020-02-16</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span></span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>NaN:aN</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="from-where"><a href="#from-where" class="headerlink" title="from where"></a>from where</h2><h2 id="how-to-setup-local-enviroment"><a href="#how-to-setup-local-enviroment" class="headerlink" title="how to setup local enviroment"></a>how to setup local enviroment</h2><h2 id="git-command"><a href="#git-command" class="headerlink" title="git command"></a>git command</h2><h2 id="SKILL-by-other"><a href="#SKILL-by-other" class="headerlink" title="SKILL by other"></a>SKILL by other</h2><ol>
-<li><a href="https://zhuanlan.zhihu.com/p/94038688" target="_blank" rel="noopener">hexo next 主题进阶设置</a></li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/01/31/read-book/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/dipublog/images/mylogo.png">
-      <meta itemprop="name" content="Hunter Huang">
-      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="安且吉兮">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/dipublog/2020/01/31/read-book/" class="post-title-link" itemprop="url">读书《农夫哲学-关于大自然与生死的沉思》</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-01-31 00:44:46 / 修改时间：00:51:09" itemprop="dateCreated datePublished" datetime="2020-01-31T00:44:46+08:00">2020-01-31</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span></span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>NaN:aN</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="2020年春节的生死考验"><a href="#2020年春节的生死考验" class="headerlink" title="2020年春节的生死考验"></a>2020年春节的生死考验</h2><h2 id="洛格-斯登这个人"><a href="#洛格-斯登这个人" class="headerlink" title="洛格-斯登这个人"></a>洛格-斯登这个人</h2><h2 id="上帝是一朵纯红鸢尾花"><a href="#上帝是一朵纯红鸢尾花" class="headerlink" title="上帝是一朵纯红鸢尾花"></a>上帝是一朵纯红鸢尾花</h2>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/01/30/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/dipublog/images/mylogo.png">
-      <meta itemprop="name" content="Hunter Huang">
-      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="安且吉兮">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/dipublog/2020/01/30/hello-world/" class="post-title-link" itemprop="url">你好新世界</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-30 20:00:00" itemprop="dateCreated datePublished" datetime="2020-01-30T20:00:00+08:00">2020-01-30</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-17 19:52:50" itemprop="dateModified" datetime="2020-03-17T19:52:50+08:00">2020-03-17</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>无比喜悦地使用 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! 这是第一篇博客文章。前往 <a href="https://hexo.io/docs/" target="_blank" rel="noopener">说明文档</a> 获取更多的信息。 如果在使用Hexo的过程中发现任何问题，你可以到<a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> 中找到答案或者你可以去<a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a> 向开发人员提问。</p>
-<p>&emsp;&emsp; 春天来了，又到了万物复苏的季节。</p>
-<p>&amp;emsp; 代表全角空格 &amp;ensp; 代表半角空格</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="发表一篇新的文章"><a href="#发表一篇新的文章" class="headerlink" title="发表一篇新的文章"></a>发表一篇新的文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>更多信息参考： <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="启动网站服务器"><a href="#启动网站服务器" class="headerlink" title="启动网站服务器"></a>启动网站服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>更多信息参考： <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="生产静态文件"><a href="#生产静态文件" class="headerlink" title="生产静态文件"></a>生产静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>更多信息参考： <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="部署内容到远程的站点"><a href="#部署内容到远程的站点" class="headerlink" title="部署内容到远程的站点"></a>部署内容到远程的站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>更多信息参考： <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h3 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h3><ul>
-<li>分段：两个回车,注意：换行不是分段的标识，空行才是</li>
-<li>换行：两个空格加回车</li>
-<li>引用：&gt;<blockquote>
-<p>这是引用的文字效果和显示，如何分成两行</p>
-</blockquote>
-</li>
-<li>转义：针对&gt;需要转义的一些场合<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\&lt;</span><br><span class="line">&lt;</span><br><span class="line">&amp;#60;</span><br></pre></td></tr></table></figure></li>
-<li>标题：标题 # ~ ###### 井号的个数表示几级标题，即Markdown可以表示一级标题到六级标题</li>
-<li>列表：*，+， -，1. 四个任选其一都可以，注意后面的空格</li>
-<li>强调：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**文字**， __文字__, _文字_, *文字*, ~~删除文字~~</span><br></pre></td></tr></table></figure>
-效果：<strong>文字</strong>， <strong>文字</strong>, <em>文字</em>, <em>文字</em>, <del>删除文字</del></li>
-<li>图片的使用：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img xxxx.jpeg 图片说明文字 %&#125;</span><br></pre></td></tr></table></figure></li>
-<li>分级显示的代码和效果<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">+ Level1</span><br><span class="line">  + level2</span><br><span class="line">    + level3</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li>Level1<ul>
-<li>level2<ul>
-<li>level3 </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><p>脚注</p>
-<p>为名词提供注释，注释将显示在文章末尾</p>
-<p>  语法：</p>
-<p>待解释文字[^脚注 id]</p>
-<p>[^脚注 id]:注释内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Hello World[^hello]</span><br><span class="line">[^hello]:你好, 世界</span><br></pre></td></tr></table></figure>
-<p>Hello World<a href="你好中文注释">^hello</a></p>
-</li>
-</ul>
-<ul>
-<li><p>表格</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|姓名|年龄|性别|身高(cm)|  </span><br><span class="line">|-|:-|:-:|-:|  </span><br><span class="line">|张三|22|男|180|  </span><br><span class="line">|李四|18|女|165|</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>姓名</th>
-<th align="left">年龄</th>
-<th align="center">性别</th>
-<th align="right">身高(cm)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>张三</td>
-<td align="left">22</td>
-<td align="center">男</td>
-<td align="right">180</td>
-</tr>
-<tr>
-<td>李四</td>
-<td align="left">18</td>
-<td align="center">女</td>
-<td align="right">165</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>字体的进阶修改和显示</p>
-<p>  <font face="黑体" color=green size=5>我是黑体，绿色，尺寸为5</font></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;font face&#x3D;&quot;黑体&quot; color&#x3D;green size&#x3D;5&gt;我是黑体，绿色，尺寸为5&lt;&#x2F;font&gt;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h2 id="文章插入图片"><a href="#文章插入图片" class="headerlink" title="文章插入图片"></a>文章插入图片</h2><p>在/source目录下新建一个images文件夹，将图片放入该文件夹下，插入图片时链接即为’/images/图片名称’。比如!<a href="/images/expamle.jpg">example</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/dipublog/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/dipublog/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/dipublog/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/dipublog/">1</a><span class="page-number current">2</span><a class="page-number" href="/dipublog/page/3/">3</a><a class="extend next" rel="next" href="/dipublog/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1132,7 +1142,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/dipublog/archives/">
         
-          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1143,7 +1153,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/dipublog/tags/">
           
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">25</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1185,12 +1195,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">NaNm</span>
+    <span title="站点总字数">22k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">NaN:aN</span>
+    <span title="站点阅读时长">40 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
   </div>
@@ -1234,6 +1244,8 @@
 
 
 
+  
+<script src="/dipublog/js/local-search.js"></script>
 
 
 
@@ -1241,6 +1253,27 @@
 
 
 
+
+
+<script>
+if (document.querySelectorAll('div.pdf').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js', () => {
+    document.querySelectorAll('div.pdf').forEach(element => {
+      PDFObject.embed(element.getAttribute('target'), element, {
+        pdfOpenParams: {
+          navpanes : 0,
+          toolbar  : 0,
+          statusbar: 0,
+          pagemode : 'thumbs',
+          view     : 'FitH'
+        },
+        PDFJS_URL: '/lib/pdf/web/viewer.html',
+        height: element.getAttribute('height') || '800px'
+      });
+    });
+  }, window.PDFObject);
+}
+</script>
 
 
 

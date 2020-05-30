@@ -14,6 +14,8 @@ keywords: vue
 * vuex：Vue提供的状态管理工具，用于同一管理我们项目中各种数据的交互和重用，存储我们需要用到数据对象。
 * webpack：一款强大的文件打包工具，可以将我们的前端项目文件同一打包压缩至js中，并且可以通过vue-loader等加载器实现语法转化与加载。
 
+<!--more-->
+
 ## Node.js
 node.js是对Chrome V8引擎进行了封装，是一个能让JavaScript运行在服务端的开发平台，它让JavaScript成为与PHP、Python、Perl、Ruby等服务端语言平起平坐的脚本语言。作为异步驱动的 JavaScript 运行时，Node.js 被设计成可升级的网络应用。Node 中几乎没有函数直接执行 I/O 操作，因此进程从不阻塞。由于没有任何阻塞，可伸缩系统在 Node 中开发是非常合理的。  
 

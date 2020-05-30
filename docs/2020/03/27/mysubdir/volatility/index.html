@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/dipublog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/dipublog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/dipublog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/dipublog/images/logo.svg" color="#222">
+
+<!-- SEO优化增加 -->
+
+  <meta name="keywords" content="读书笔记, 书摘, 书评, 图书收藏和技术" />
+
+<!-- SEO优化增加 -->
+
+<link rel="stylesheet" href="/dipublog/css/main.css">
+
+
+<link rel="stylesheet" href="/dipublog/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"cocobase.github.io","root":"/dipublog/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="SHELDON NATENBERG 的《Option Volatility Trading  Strategies》，书的内容还是很入门的，从基本的概率论，方差、分布、VaR讲起，没有什么特别高阶的东西。总体来说，入门，或者复习的好书毕竟连GARCH这样的模型都只是提了一下。不过，总体而言，入门知识讲的还是很清楚的。  Future Volatility是未来波动率，确切的说，是未来真正的波动率。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="四种波动率">
+<meta property="og:url" content="https://cocobase.github.io/dipublog/2020/03/27/mysubdir/volatility/index.html">
+<meta property="og:site_name" content="安且吉兮">
+<meta property="og:description" content="SHELDON NATENBERG 的《Option Volatility Trading  Strategies》，书的内容还是很入门的，从基本的概率论，方差、分布、VaR讲起，没有什么特别高阶的东西。总体来说，入门，或者复习的好书毕竟连GARCH这样的模型都只是提了一下。不过，总体而言，入门知识讲的还是很清楚的。  Future Volatility是未来波动率，确切的说，是未来真正的波动率。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cocobase.github.io/dipublog/2020/03/27/mysubdir/volatility/volatility.jpg">
+<meta property="article:published_time" content="2020-03-27T14:26:21.000Z">
+<meta property="article:modified_time" content="2020-03-28T01:57:11.184Z">
+<meta property="article:author" content="Hunter Huang">
+<meta property="article:tag" content="量化交易">
+<meta property="article:tag" content="金融">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cocobase.github.io/dipublog/2020/03/27/mysubdir/volatility/volatility.jpg">
+
+<link rel="canonical" href="https://cocobase.github.io/dipublog/2020/03/27/mysubdir/volatility/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>四种波动率 | 安且吉兮</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/dipublog/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">安且吉兮</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">关于科技、人文的星辰大海</p>
+  </div>
+
+  <div class="site-nav-right"></div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/dipublog/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/dipublog/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/dipublog/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/03/27/mysubdir/volatility/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/dipublog/images/mylogo.png">
+      <meta itemprop="name" content="Hunter Huang">
+      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="安且吉兮">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          四种波动率
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-27 22:26:21" itemprop="dateCreated datePublished" datetime="2020-03-27T22:26:21+08:00">2020-03-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-28 09:57:11" itemprop="dateModified" datetime="2020-03-28T09:57:11+08:00">2020-03-28</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>689</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>SHELDON NATENBERG 的《Option Volatility Trading  Strategies》，书的内容还是很入门的，从基本的概率论，方差、分布、VaR讲起，没有什么特别高阶的东西。总体来说，入门，或者复习的好书毕竟连GARCH这样的模型都只是提了一下。不过，总体而言，入门知识讲的还是很清楚的。</p>
+<ul>
+<li>Future Volatility是未来波动率，确切的说，是未来真正的波动率。一听就知道，这个肯定没有人知道，而整个期权交易的核心就是如何预测这个未来波动率，包括其他三种波动率，说白了都是为了能够更好的估计未来波动率而努力的。</li>
+<li>而历史波动率，其实就是通过之前的交易数据计算出来的波动率，这是能够确定的。</li>
+<li>预测波动率则是一个很广泛的概念了，你可以随便预测未来波动率，抛色子能够获得Forecast Volatility，拍脑袋也行，GARCH模型也行，用期权的市场价格来预测也行，因为期权的价格与未来的波动率紧密相关。</li>
+<li>上面这些所谓预测未来波动率的方法中的最后一种，通过期权的市场价格来计算一个波动率，这个波动率叫做隐含波动了,Implied Volatility。换句话说，隐含波动了就是全市场投票，共同预测的未来的波动率。</li>
+</ul>
+<img src="/dipublog/2020/03/27/mysubdir/volatility/volatility.jpg" class="" title="波动率">
+
+<ul>
+<li><a href="https://www.zhihu.com/question/19770602" target="_blank" rel="noopener">知乎：价格波动率有没有准确的表达式？</a>写的非常详细和专业。</li>
+<li><a href="https://vlab.stern.nyu.edu/zh" target="_blank" rel="noopener">波动实验室</a>波动实验室(V-Lab)为多种金融资产的波动率、相关性、风险指标提供实时数据、建模、预测，涵盖了美国与其他国家的大量个股、股指、信用违约互换协议（CDS）、外汇、商品期货、债券等。V-lab将金融计量经济学中的经典模型与最新进展结合在一起。我们致力于金融研究者、监管者与从业者提供实时市场动态。</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/dipublog/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/" rel="tag"><i class="fa fa-tag"></i> 量化交易</a>
+              <a href="/dipublog/tags/%E9%87%91%E8%9E%8D/" rel="tag"><i class="fa fa-tag"></i> 金融</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/dipublog/2020/03/20/mycss/front-end-collect/" rel="prev" title="前端学习网站收藏">
+      <i class="fa fa-chevron-left"></i> 前端学习网站收藏
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/dipublog/2020/04/06/mysubdir/fin-data-collect/" rel="next" title="金融数据收集">
+      金融数据收集 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Hunter Huang"
+      src="/dipublog/images/mylogo.png">
+  <p class="site-author-name" itemprop="name">Hunter Huang</p>
+  <div class="site-description" itemprop="description">一个孤独的精神家园和独立思考者</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/dipublog/archives/">
+        
+          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/dipublog/tags/">
+          
+        <span class="site-state-item-count">25</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/cocobase" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;cocobase" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:cocobase@126.com" title="E-Mail → mailto:cocobase@126.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Hunter Huang</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">22k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">40 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/dipublog/lib/anime.min.js"></script>
+  <script src="/dipublog/lib/velocity/velocity.min.js"></script>
+  <script src="/dipublog/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/dipublog/js/utils.js"></script>
+
+<script src="/dipublog/js/motion.js"></script>
+
+
+<script src="/dipublog/js/schemes/muse.js"></script>
+
+
+<script src="/dipublog/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/dipublog/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+<script>
+if (document.querySelectorAll('div.pdf').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js', () => {
+    document.querySelectorAll('div.pdf').forEach(element => {
+      PDFObject.embed(element.getAttribute('target'), element, {
+        pdfOpenParams: {
+          navpanes : 0,
+          toolbar  : 0,
+          statusbar: 0,
+          pagemode : 'thumbs',
+          view     : 'FitH'
+        },
+        PDFJS_URL: '/lib/pdf/web/viewer.html',
+        height: element.getAttribute('height') || '800px'
+      });
+    });
+  }, window.PDFObject);
+}
+</script>
+
+
+
+
+  
+
+  
+
+</body>
+</html>

@@ -100,3 +100,13 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: ''
+
+# Search 搜索相关的配置
+## npm install hexo-generator-search --save
+## npm install hexo-generator-searchdb --save 
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+  
