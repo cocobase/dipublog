@@ -34,7 +34,7 @@
 <meta property="og:description" content="Vue.js技术栈 npm：node.js的包管理工具，用于同一管理我们前端项目中需要用到的包、插件、工具、命令等，便于开发和维护。 ES6：Javascript的新版本，ECMAScript6的简称。利用ES6我们可以简化我们的JS代码，同时利用其提供的强大功能来快速实现JS逻辑。 Babel：一款将ES6代码转化为浏览器兼容的ES5代码的插件 vue-cli：Vue的脚手架工具，用于自动生成V">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-20T09:39:36.000Z">
-<meta property="article:modified_time" content="2020-03-20T11:46:44.087Z">
+<meta property="article:modified_time" content="2020-05-30T04:19:13.643Z">
 <meta property="article:author" content="Hunter Huang">
 <meta property="article:tag" content="vue">
 <meta name="twitter:card" content="summary">
@@ -205,10 +205,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-03-20 17:39:36 / 修改时间：19:46:44" itemprop="dateCreated datePublished" datetime="2020-03-20T17:39:36+08:00">2020-03-20</time>
+              <time title="创建时间：2020-03-20 17:39:36" itemprop="dateCreated datePublished" datetime="2020-03-20T17:39:36+08:00">2020-03-20</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-30 12:19:13" itemprop="dateModified" datetime="2020-05-30T12:19:13+08:00">2020-05-30</time>
+              </span>
 
           <br>
             <span class="post-meta-item" title="本文字数">
@@ -244,6 +250,8 @@
 <li>vuex：Vue提供的状态管理工具，用于同一管理我们项目中各种数据的交互和重用，存储我们需要用到数据对象。</li>
 <li>webpack：一款强大的文件打包工具，可以将我们的前端项目文件同一打包压缩至js中，并且可以通过vue-loader等加载器实现语法转化与加载。</li>
 </ul>
+<a id="more"></a>
+
 <h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>node.js是对Chrome V8引擎进行了封装，是一个能让JavaScript运行在服务端的开发平台，它让JavaScript成为与PHP、Python、Perl、Ruby等服务端语言平起平坐的脚本语言。作为异步驱动的 JavaScript 运行时，Node.js 被设计成可升级的网络应用。Node 中几乎没有函数直接执行 I/O 操作，因此进程从不阻塞。由于没有任何阻塞，可伸缩系统在 Node 中开发是非常合理的。  </p>
 <p>HTTP 是 Node.js 中的一等公民。它设计的是流式和低延迟。这使得 Node.js 非常适合于 web 库或框架的基础。</p>
 <h2 id="Npm"><a href="#Npm" class="headerlink" title="Npm"></a>Npm</h2><p>在传统的前端开发中我们会经常引入jquery、bootstrap、echarts等js插件，我们首先去插件的每个官网去下载下来，然后放到自己前端工程中static/js目录下，我们每引用一个插件都要去官网下载，然后将下载的插件拖到工程中来，美国的一个程序员Isaac Z. Schlueter就做够了这种机械运动，想简化这个流程，于是做了这样一件事：</p>
@@ -425,13 +433,14 @@ Vue.use(ElementUI)
       <div class="site-state-item site-state-posts">
           <a href="/dipublog/archives/">
         
-          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-count">30</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">分类</span>
+            <a href="/dipublog/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/dipublog/tags/">
@@ -478,12 +487,12 @@ Vue.use(ElementUI)
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">22k</span>
+    <span title="站点总字数">23k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">40 分钟</span>
+    <span title="站点阅读时长">42 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
   </div>

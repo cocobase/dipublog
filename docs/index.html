@@ -184,6 +184,169 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/05/30/hexo-category-config/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/dipublog/images/mylogo.png">
+      <meta itemprop="name" content="Hunter Huang">
+      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="安且吉兮">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/dipublog/2020/05/30/hexo-category-config/" class="post-title-link" itemprop="url">hexo-category-config</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-30 16:22:51 / 修改时间：16:48:33" itemprop="dateCreated datePublished" datetime="2020-05-30T16:22:51+08:00">2020-05-30</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>477</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Hexo的Category分类管理文章功能是需要配置以后才会正常显示的。</p>
+<h2 id="创建“分类”选项"><a href="#创建“分类”选项" class="headerlink" title="创建“分类”选项"></a>创建“分类”选项</h2><ol>
+<li><p>生成分类页并添加type属性<br>打开命令行，进入博客所在的文件夹，执行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>成功后会提示： Info Created: ~/……/blog/source/categories/index.md<br>根据上面提示的路径找到index.md这个文件，打开后修改默认的内容，重点是增加了一样内容：type: “categories”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date：</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>给文章增加”categories”属性<br>打开需要添加分类的文章，为该文章添加categories属性。hexo文章只能属于一个分类。如果在下面举例中的”-web前端”分类下方添加”-xxx”分类，hexo不会产生两个分类，而是把分类嵌套（该文章属于“-web前端”分类下的”-xxx”分类</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: xxxx</span><br><span class="line">date: xxxx-xx-xx xx:xx:xx</span><br><span class="line">categories:</span><br><span class="line">- web前端</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/05/30/hexo-search/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/dipublog/images/mylogo.png">
+      <meta itemprop="name" content="Hunter Huang">
+      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="安且吉兮">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/dipublog/2020/05/30/hexo-search/" class="post-title-link" itemprop="url">hexo-search</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-30 10:48:40 / 修改时间：12:20:07" itemprop="dateCreated datePublished" datetime="2020-05-30T10:48:40+08:00">2020-05-30</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>828</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>随着时间的推移，个人站点的博客文章会越来越多，那怎么样才能快速找到你印象中的文章呢？增加一个站点内的搜索功能是非常有必要和方便的。  </p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/dipublog/2020/05/30/hexo-search/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/05/01/hongkong-vps/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -286,10 +449,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-04-21 09:26:18 / 修改时间：14:12:10" itemprop="dateCreated datePublished" datetime="2020-04-21T09:26:18+08:00">2020-04-21</time>
+              <time title="创建时间：2020-04-21 09:26:18" itemprop="dateCreated datePublished" datetime="2020-04-21T09:26:18+08:00">2020-04-21</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-30 12:18:20" itemprop="dateModified" datetime="2020-05-30T12:18:20+08:00">2020-05-30</time>
+              </span>
 
           <br>
             <span class="post-meta-item" title="本文字数">
@@ -322,36 +491,14 @@
 <li>标签的属性或者文本特征不显著</li>
 <li>标签嵌套层次太复杂</li>
 </ul>
-<h2 id="xpath常用标签"><a href="#xpath常用标签" class="headerlink" title="xpath常用标签"></a>xpath常用标签</h2><p>/ ——提取某个标签下的所有内容<br>text() ——- 提取标签所包含的文本内容<br>@ ———- 提取标签属性的信息<br>// ———- 寻找所有的标签<br>[@属性=值] —— 定位标签  </p>
-<h3 id="Xpath定位方法：Xpath路径"><a href="#Xpath定位方法：Xpath路径" class="headerlink" title="Xpath定位方法：Xpath路径"></a>Xpath定位方法：Xpath路径</h3><img src="/dipublog/2020/04/21/scrapy/xpath/xpath-route.png" class="" title="xpath路径"> 
-<p>举例一:定位节点  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#查找html下的body下的form下的所有input节点</span><br><span class="line">/html/body/form/input</span><br><span class="line"></span><br><span class="line">#查找所有input节点</span><br><span class="line"><span class="comment">//input</span></span><br></pre></td></tr></table></figure>
-<p>举例二:通配符*选择未知的节点  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#查找form节点下的所有节点</span><br><span class="line"><span class="comment">//form/*#查找所有节点//*</span></span><br><span class="line"></span><br><span class="line">#查找所有input节点（input至少有爷爷辈亲戚节点）</span><br><span class="line"></span><br><span class="line"><span class="comment">//*/input</span></span><br></pre></td></tr></table></figure>
-<img src="/dipublog/2020/04/21/scrapy/xpath/xpath-main.png" class="" title="主语">
-
-<h2 id="使用索引"><a href="#使用索引" class="headerlink" title="使用索引"></a>使用索引</h2><p>如果筛选时元素时出现多个节点，但我们想确定唯一节点。可以使用类似于列表索引的方式精确定位。<br>举例一：  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#定位 第8个td下的 第2个a节点</span><br><span class="line"><span class="comment">//*/td[7]/a[1]</span></span><br><span class="line"></span><br><span class="line">#定位 第8个td下的 第3个span节点</span><br><span class="line"><span class="comment">//*/td[7]/span[2]</span></span><br><span class="line"></span><br><span class="line">#定位 最后一个td下的  最后一个a节点</span><br><span class="line"><span class="comment">//*/td[last()]/a[last()]</span></span><br></pre></td></tr></table></figure>
-<img src="/dipublog/2020/04/21/scrapy/xpath/xpath-wei.png" class="" title="谓语">  
-
-<h2 id="使用属性"><a href="#使用属性" class="headerlink" title="使用属性"></a>使用属性</h2><p>为了让定位更精准，跟使用索引类似，我们要增加信息量，那么还可以使用属性。@符号是属性符<br>举例一：  </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#定位所有包含name属性的input节点</span><br><span class="line"><span class="comment">//input[@name]</span></span><br><span class="line"></span><br><span class="line">#定位含有属性的所有的input节点</span><br><span class="line"><span class="comment">//input[@*]</span></span><br><span class="line"></span><br><span class="line">#定位所有value=2的input节点</span><br><span class="line"><span class="comment">//input[@value='2']</span></span><br><span class="line"></span><br><span class="line">#使用多个属性定位</span><br><span class="line"><span class="comment">//input[@value='2'][@id='3']</span></span><br><span class="line">或者<span class="comment">//input[@value='2' and @id='3']</span></span><br></pre></td></tr></table></figure>
-<img src="/dipublog/2020/04/21/scrapy/xpath/xpath-express.png" class="" title="表达式">
-
-<h2 id="使用举例"><a href="#使用举例" class="headerlink" title="使用举例"></a>使用举例</h2><p>/html —–代表提取html标签内的所有内容<br>/html/head/title —–代表提取title下面的所有信息<br>//li —— 代表提取所有的li标签<br>//li[@class=’hidden-xs’] ——– 直接定位到满足条件的标签<br>//li[@class=’hidden-xs’]/a/@heef ———- 提取到class = hidden-cs的li标签下面的a标签的href的值</p>
-<h2 id="常用函数"><a href="#常用函数" class="headerlink" title="常用函数"></a>常用函数</h2><p>除了索引、属性外，Xpath还可以使用便捷的函数来增强定位的准确性。下面试常用的几个函数：  </p>
-<img src="/dipublog/2020/04/21/scrapy/xpath/xpath-func.png" class="" title="常用函数">
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"menu_hot"</span> <span class="attr">href</span>=<span class="string">"/ads/auth/promote.html"</span>&gt;</span>应用推广<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#定位href属性中包含“promote.html”的所有a节点</span><br><span class="line"><span class="comment">//a[contains(@href,'promote.html')]</span></span><br><span class="line"></span><br><span class="line">#元素内的文本为“应用推广”的所有a节点</span><br><span class="line"><span class="comment">//a[text()='应用推广']</span></span><br><span class="line"></span><br><span class="line">#href属性值是以“/ads”开头的所有a节点</span><br><span class="line"><span class="comment">//a[starts-with(@href,'/ads')]</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="xpath轴"><a href="#xpath轴" class="headerlink" title="xpath轴"></a>xpath轴</h2><p>这部分类似BeautifulSoup中的sibling、parents、children方法。  </p>
-<img src="/dipublog/2020/04/21/scrapy/xpath/xpath-zhou.png" class="" title="xpath轴">
-
-<h2 id="scrapy中使用xpath"><a href="#scrapy中使用xpath" class="headerlink" title="scrapy中使用xpath"></a>scrapy中使用xpath</h2><p>爬取html页面的title标签内容和class=‘note’的div标签下的内容</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">next</span><span class="params">(self,response)</span>:</span></span><br><span class="line">    title = response.xpath(<span class="string">"/html/head/title/text()"</span>).extract()</span><br><span class="line">    note = response.xpath(<span class="string">"//div[@class = 'note']/text()"</span>).extract()</span><br><span class="line">    print(title)</span><br><span class="line">    print(note)</span><br></pre></td></tr></table></figure>
-
-<h2 id="常用学习参考链接"><a href="#常用学习参考链接" class="headerlink" title="常用学习参考链接"></a>常用学习参考链接</h2><p><a href="https://doc.scrapy.org/en/xpath-tutorial/topics/xpath-tutorial.html" target="_blank" rel="noopener">Scrapy官方文档中的xpath使用方法</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/dipublog/2020/04/21/scrapy/xpath/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -640,10 +787,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-03-20 17:39:36 / 修改时间：19:46:44" itemprop="dateCreated datePublished" datetime="2020-03-20T17:39:36+08:00">2020-03-20</time>
+              <time title="创建时间：2020-03-20 17:39:36" itemprop="dateCreated datePublished" datetime="2020-03-20T17:39:36+08:00">2020-03-20</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-30 12:19:13" itemprop="dateModified" datetime="2020-05-30T12:19:13+08:00">2020-05-30</time>
+              </span>
 
           <br>
             <span class="post-meta-item" title="本文字数">
@@ -679,87 +832,14 @@
 <li>vuex：Vue提供的状态管理工具，用于同一管理我们项目中各种数据的交互和重用，存储我们需要用到数据对象。</li>
 <li>webpack：一款强大的文件打包工具，可以将我们的前端项目文件同一打包压缩至js中，并且可以通过vue-loader等加载器实现语法转化与加载。</li>
 </ul>
-<h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>node.js是对Chrome V8引擎进行了封装，是一个能让JavaScript运行在服务端的开发平台，它让JavaScript成为与PHP、Python、Perl、Ruby等服务端语言平起平坐的脚本语言。作为异步驱动的 JavaScript 运行时，Node.js 被设计成可升级的网络应用。Node 中几乎没有函数直接执行 I/O 操作，因此进程从不阻塞。由于没有任何阻塞，可伸缩系统在 Node 中开发是非常合理的。  </p>
-<p>HTTP 是 Node.js 中的一等公民。它设计的是流式和低延迟。这使得 Node.js 非常适合于 web 库或框架的基础。</p>
-<h2 id="Npm"><a href="#Npm" class="headerlink" title="Npm"></a>Npm</h2><p>在传统的前端开发中我们会经常引入jquery、bootstrap、echarts等js插件，我们首先去插件的每个官网去下载下来，然后放到自己前端工程中static/js目录下，我们每引用一个插件都要去官网下载，然后将下载的插件拖到工程中来，美国的一个程序员Isaac Z. Schlueter就做够了这种机械运动，想简化这个流程，于是做了这样一件事：</p>
-<ul>
-<li>买了台服务器作为代码仓库(registry), 用于存放被共享的代码</li>
-<li>发邮件分别通知各大JS插件作者(如jQuery的作者、bootstrap的作者、Vue的作者、element-ui的作者等等)让他们使用npm publish 命令将自己的JS插件提交到registry中</li>
-<li>用户如果想使用某个JS插件可以先在package.json中配置一些需要安装的插件名称和对应的版本号(依赖dependency)，然后通过npm install命令来下载它们，下载下来的插件自动放在node_modules目录下面</li>
-</ul>
-<p>这套思想和maven是完全一样的，熟悉maven或者gradle的也就自然理解npm了，只不过npm用于js,maven用于java，都是作者先将共享的代码放到某个公共的代码仓库，用户先在配置文件中配置好要使用的依赖，然后通过一个命令就能下载下来。</p>
-<h2 id="Webpack-前端项目的构建工具"><a href="#Webpack-前端项目的构建工具" class="headerlink" title="Webpack:前端项目的构建工具"></a>Webpack:前端项目的构建工具</h2><p>传统的前端一般会html、javascript、css这三样东西就够了。现代的前端发展迅猛，引入了TypeScript、SCSS、LESS、stylus(CSS预处理器)等技术，提供了更丰富的特性，提高了开发效率，但是引入的这些技术不能直接被浏览器解析，需要一个东西将浏览器不能解析的代码翻译成浏览器可以直接解析代码，这就是webpack的作用。</p>
-<ul>
-<li>TypeScript是JavaScript类型的超集(简单的说就是对JavaScript的封装)，提供更加丰富的特性(在JavaScript上添加了可选的静态类型和基于类的面向对象编程)，而且可以编译成纯JavaScript</li>
-<li>ECMAScript：ECMAScript是标准，JavaScript是ECMAScript的实现，ECMAScript也在快速发展，引入了更多的语法新特性等。其中ECMAScript6使用较多，现在ECMAScript8已经发布了。</li>
-<li>SCSS: SCSS即是SASS的新语法，是Sassy CSS的简写，是CSS3语法的超集，也就是说所有有效的CSS3样式也同样适合于SASS。SASS是CSS3的一个扩展，增加了规则嵌套、变量、混合、选择器继承等等。通过使用命令行工具或WEB框架插件把它转换成标准的、格式良好的CSS代码。</li>
-<li>less: Less 是一门 CSS 预处理语言，它扩展了 CSS 语言，增加了变量、Mixin、函数等特性，使 CSS 更易维护和扩展。Less 可以运行在 Node 或浏览器端。</li>
-<li>stylus：文件后缀是. styl 的这个哥们儿学名叫 stylus，是 CSS 的预处理框架。stylus 给 CSS 添加了可编程的特性，也就是说，在 stylus 中可以使用变量、函数、判断、循环一系列 CSS 没有的东西来编写样式文件，执行这一套骚操作之后，这个文件可编译成 CSS 文件。</li>
-</ul>
-<p>webpack可以看做是模块打包机：它做的事情是，分析你的项目结构，找到JavaScript模块以及其它的一些浏览器不能直接运行的拓展语言（TypeScript、SCSS等），并将其打包为合适的格式以供浏览器直接使用。随着webpack的发展，webpack支持ECMAScript6、ECMAScript7、ECMAScript8等。随着webpack的发展，webpack不仅仅用来编译(翻译)代码，也集成了更多的功能，比如：</p>
-<ol>
-<li>热加载：修改了代码然后保存，浏览器会自动刷新</li>
-<li>压缩文件：压缩图片，字体, 脚本文件等</li>
-<li>插件(plugin)：webpack打包时可以执行某个插件，控制webpack打包时的某个过程，这种插件机制和maven中的插件原理完全一样</li>
-</ol>
-<p>模块(module)化就是把复杂的应用程序细分为较小的文件，在webpack中一切都是模块，js、css、图片、字体等待都可称为模块。</p>
-<h3 id="webpack中的重要功能"><a href="#webpack中的重要功能" class="headerlink" title="webpack中的重要功能"></a>webpack中的重要功能</h3><ol>
-<li><p>devtool:<br>devtool: “eval-source-map” webpack打包后的文件可读性非常低，不利于调试，使用devtool可以生成对应的源码便于调试。使用eval打包源文件模块，在同一个文件中生成干净的完整的source map。这个选项可以在不影响构建速度的前提下生成完整的sourcemap，但是对打包后输出的JS文件的执行具有性能和安全的隐患。在开发阶段这是一个非常好的选项，在生产阶段则一定不要启用这个选项；</p>
-</li>
-<li><p>webpack-dev-server:<br>webpack-dev-server 是一个本地开发服务器，居于node.js实现的，使用npm run dev 后就可以使用默认的8080端口在浏览器上访问了，类似于apache的功能</p>
-</li>
-<li><p>loaders:<br>loader可以让webpack有能力调用外部的脚本或工具，实现对不同格式的文件的处理，比如说分析转换scss为css，或者把下一代的JS文件（ES6，ES7)转换为现代浏览器兼容的JS文件。css-loader 和 style-loader 就是用来处理样式的。</p>
-</li>
-<li><p>Babel(很重要):<br>Babel其实是一个编译JavaScript的平台，它可以编译代码帮你达到以下目的：</p>
-<ul>
-<li>让你能使用最新的JavaScript代码（ES6，ES7等待），而不用管新标准是否被当前使用的浏览器完全支持；</li>
-<li>让你能使用基于JavaScript进行了拓展的语言，比如React的JSX；</li>
-</ul>
-</li>
-<li><p>plugins:<br>插件（Plugins）是用来拓展Webpack功能的，它们会在整个构建过程中生效，执行相关的任务。<br>Loaders和Plugins常常被弄混，但是他们其实是完全不同的东西，可以这么来说，loaders是在打包构建过程中用来处理源文件的（JSX，Scss，Less..），一次处理一个，插件并不直接操作单个文件，它直接对整个构建过程其作用。<br>Webpack有很多内置插件，同时也有很多第三方插件，可以让我们完成更加丰富的功能  </p>
-<p>常用的插件：</p>
-<ul>
-<li>HtmlWebpackPlugin</li>
-<li>Hot Module Replacement（HMR） 热加载：允许你在修改组件代码后，自动刷新实时预览修改后的效果</li>
-<li>clean-webpack-plugin 去除build文件中的残余文件</li>
-<li>OccurenceOrderPlugin :为组件分配ID，通过这个插件webpack可以分析和优先考虑使用最多的模块，并为它们分配最小的ID</li>
-<li>UglifyJsPlugin： 压缩JS代码</li>
-<li>ExtractTextPlugin：分离CSS和JS文件</li>
-</ul>
-</li>
-</ol>
-<h2 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h2><ul>
-<li>它是一个轻量级的MVVM框架。</li>
-<li>使用 数据驱动+组件化 来开。</li>
-<li>数据双向绑定(当修改视图时数据也会赋值给model，当更改model的时候也会反应到视图上)。</li>
-<li>页面上每个独立的可视或者可交互的区域均视为一个组件，每个组件对应一个工程目录(文件夹)，组件所需要的各种资源尽可能的都放在这个目录下就近维护(即将模板、样式、js等都写在一个.vue文件中)，组件可以嵌套自由组合，形成完整的页面。</li>
-</ul>
-<h2 id="集成Element"><a href="#集成Element" class="headerlink" title="集成Element"></a>集成Element</h2><ol>
-<li><p>安装element-ui<br>```js</p>
-<h1 id="切换到项目根目录"><a href="#切换到项目根目录" class="headerlink" title="切换到项目根目录"></a>切换到项目根目录</h1><p>$ cd <project root dir></p>
-<h1 id="安装element-ui-安装后package-json中dependencies就会增加element-ui依赖"><a href="#安装element-ui-安装后package-json中dependencies就会增加element-ui依赖" class="headerlink" title="安装element-ui, 安装后package.json中dependencies就会增加element-ui依赖"></a>安装element-ui, 安装后package.json中dependencies就会增加element-ui依赖</h1><p>$ cnpm i element-ui -S </p>
-</li>
-<li><p>在main.js中配置element-ui<br>在main.js中增加导入和让Vue使用ElementUI</p>
-<pre><code class="js"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span>
-<span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">'./App'</span>
-<span class="keyword">import</span> router <span class="keyword">from</span> <span class="string">'./router'</span>
-<span class="comment">// 导入element-ui</span>
-<span class="keyword">import</span> ElementUI <span class="keyword">from</span> <span class="string">'element-ui'</span>
-Vue.config.productionTip = <span class="literal">false</span>
-<span class="comment">// Vue使用ElementUI</span>
-Vue.use(ElementUI)
-<span class="comment">/* eslint-disable no-new */</span>
-<span class="keyword">new</span> Vue({
-    el: <span class="string">'#app'</span>,
-    router,
-    components: { App },
-    template: <span class="string">'&lt;App/&gt;'</span>
-    })</code></pre>
-</li>
-<li><p>安装依赖<br>cnpm install</p>
-</li>
-</ol>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/dipublog/2020/03/20/mycss/vue-tech-stack/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -956,157 +1036,6 @@ Vue.use(ElementUI)
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/03/18/mysubdir/faas-collect/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/dipublog/images/mylogo.png">
-      <meta itemprop="name" content="Hunter Huang">
-      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="安且吉兮">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/dipublog/2020/03/18/mysubdir/faas-collect/" class="post-title-link" itemprop="url">FaaS的材料收集</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-03-18 09:12:23 / 修改时间：09:13:41" itemprop="dateCreated datePublished" datetime="2020-03-18T09:12:23+08:00">2020-03-18</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>24</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="资料整理"><a href="#资料整理" class="headerlink" title="资料整理"></a>资料整理</h2><ol>
-<li><a href="https://cloud.tencent.com/developer/article/1401432" target="_blank" rel="noopener">Function as a Service介绍</a></li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://cocobase.github.io/dipublog/2020/03/15/mysubdir/hexo-seo-collect/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/dipublog/images/mylogo.png">
-      <meta itemprop="name" content="Hunter Huang">
-      <meta itemprop="description" content="一个孤独的精神家园和独立思考者">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="安且吉兮">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/dipublog/2020/03/15/mysubdir/hexo-seo-collect/" class="post-title-link" itemprop="url">Hexo的SEO优化</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-03-15 20:08:35 / 修改时间：20:30:52" itemprop="dateCreated datePublished" datetime="2020-03-15T20:08:35+08:00">2020-03-15</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>38</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="SEO优化的链接收集"><a href="#SEO优化的链接收集" class="headerlink" title="SEO优化的链接收集"></a>SEO优化的链接收集</h2><ul>
-<li><a href="https://www.jianshu.com/p/509df74d24f0" target="_blank" rel="noopener">简书：Hexo SEO设置</a></li>
-<li><a href="https://blog.csdn.net/lzy98/article/details/81140704" target="_blank" rel="noopener">CSDN:HEXO SEO 高级优化</a></li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -1179,13 +1108,14 @@ Vue.use(ElementUI)
       <div class="site-state-item site-state-posts">
           <a href="/dipublog/archives/">
         
-          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-count">30</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">分类</span>
+            <a href="/dipublog/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/dipublog/tags/">
@@ -1232,12 +1162,12 @@ Vue.use(ElementUI)
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">22k</span>
+    <span title="站点总字数">23k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">40 分钟</span>
+    <span title="站点阅读时长">42 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
   </div>

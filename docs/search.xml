@@ -12,6 +12,9 @@
 </ul>
 <h2 id="初始化一个vue项目"><a href="#初始化一个vue项目" class="headerlink" title="初始化一个vue项目"></a>初始化一个vue项目</h2><p>  命令行执行：vue init webpack todo-vue 初始化一个名称为 todo-vue的项目。<br>  <img src="/dipublog/2020/02/28/Vue-study/vue-init-dir.png" class="" title="项目的目录结构图">  </p>
 ]]></content>
+      <categories>
+        <category>网站技术</category>
+      </categories>
       <tags>
         <tag>Vue</tag>
       </tags>
@@ -209,6 +212,9 @@
 <li><a href="https://www.dazhuanlan.com/2019/12/16/5df69eba9ed3c/" target="_blank" rel="noopener">hexo常见问的解决</a></li>
 <li><a href="https://wiki.jikexueyuan.com/project/hexo-document/" target="_blank" rel="noopener">Hexo中文开发手册</a>国人整理，写的比官方文档易懂一些</li>
 </ol>
+<h2 id="NexT的学习和参考"><a href="#NexT的学习和参考" class="headerlink" title="NexT的学习和参考"></a>NexT的学习和参考</h2><ol>
+<li><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">NexT配置和优化中国站点</a></li>
+</ol>
 ]]></content>
       <tags>
         <tag>Hexo</tag>
@@ -348,6 +354,8 @@
 <li>vuex：Vue提供的状态管理工具，用于同一管理我们项目中各种数据的交互和重用，存储我们需要用到数据对象。</li>
 <li>webpack：一款强大的文件打包工具，可以将我们的前端项目文件同一打包压缩至js中，并且可以通过vue-loader等加载器实现语法转化与加载。</li>
 </ul>
+<a id="more"></a>
+
 <h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>node.js是对Chrome V8引擎进行了封装，是一个能让JavaScript运行在服务端的开发平台，它让JavaScript成为与PHP、Python、Perl、Ruby等服务端语言平起平坐的脚本语言。作为异步驱动的 JavaScript 运行时，Node.js 被设计成可升级的网络应用。Node 中几乎没有函数直接执行 I/O 操作，因此进程从不阻塞。由于没有任何阻塞，可伸缩系统在 Node 中开发是非常合理的。  </p>
 <p>HTTP 是 Node.js 中的一等公民。它设计的是流式和低延迟。这使得 Node.js 非常适合于 web 库或框架的基础。</p>
 <h2 id="Npm"><a href="#Npm" class="headerlink" title="Npm"></a>Npm</h2><p>在传统的前端开发中我们会经常引入jquery、bootstrap、echarts等js插件，我们首先去插件的每个官网去下载下来，然后放到自己前端工程中static/js目录下，我们每引用一个插件都要去官网下载，然后将下载的插件拖到工程中来，美国的一个程序员Isaac Z. Schlueter就做够了这种机械运动，想简化这个流程，于是做了这样一件事：</p>
@@ -816,6 +824,8 @@ end.  </code></pre><blockquote>
 <li>标签的属性或者文本特征不显著</li>
 <li>标签嵌套层次太复杂</li>
 </ul>
+<a id="more"></a>
+
 <h2 id="xpath常用标签"><a href="#xpath常用标签" class="headerlink" title="xpath常用标签"></a>xpath常用标签</h2><p>/ ——提取某个标签下的所有内容<br>text() ——- 提取标签所包含的文本内容<br>@ ———- 提取标签属性的信息<br>// ———- 寻找所有的标签<br>[@属性=值] —— 定位标签  </p>
 <h3 id="Xpath定位方法：Xpath路径"><a href="#Xpath定位方法：Xpath路径" class="headerlink" title="Xpath定位方法：Xpath路径"></a>Xpath定位方法：Xpath路径</h3><img src="/dipublog/2020/04/21/scrapy/xpath/xpath-route.png" class="" title="xpath路径"> 
 <p>举例一:定位节点  </p>
@@ -902,6 +912,38 @@ end.  </code></pre><blockquote>
       <tags>
         <tag>投资</tag>
         <tag>债券</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo-search</title>
+    <url>/dipublog/2020/05/30/hexo-search/</url>
+    <content><![CDATA[<p>随着时间的推移，个人站点的博客文章会越来越多，那怎么样才能快速找到你印象中的文章呢？增加一个站点内的搜索功能是非常有必要和方便的。  </p>
+<a id="more"></a>
+<h2 id="具体操作的步骤"><a href="#具体操作的步骤" class="headerlink" title="具体操作的步骤"></a>具体操作的步骤</h2><ol>
+<li>安装搜索需要的插件：在Hexo的根目录下，打开命令可执行窗口，执行如下命令: <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br><span class="line">npm install hexo-generator-searchdb --save</span><br><span class="line">&#96;&#96;&#96;  </span><br><span class="line">上述命令执行成功表示正确安装了搜索所需要的插件。  </span><br><span class="line"></span><br><span class="line">2. 全局配置文件_config.yml，新增如下内容：</span><br><span class="line">&#96;&#96;&#96; </span><br><span class="line">search:</span><br><span class="line">     path: search.xml</span><br><span class="line">     field: post</span><br><span class="line">     format: html</span><br><span class="line">     limit: 10000</span><br><span class="line">&#96;&#96;&#96;  </span><br><span class="line">  </span><br><span class="line">3. hexo主题配置文件（\themes\next_config.yml），修改local_search的enable为true：</span><br><span class="line">   &#96;&#96;&#96; </span><br><span class="line">   # Local search</span><br><span class="line">   # Dependencies: https:&#x2F;&#x2F;github.com&#x2F;flashlab&#x2F;hexo-generator-search</span><br><span class="line">   local_search:</span><br><span class="line">        enable: true</span><br><span class="line">        # if auto, trigger search by changing input</span><br><span class="line">        # if manual, trigger search by pressing enter key or search button</span><br><span class="line">        trigger: auto</span><br><span class="line">        # show top n results per article, show all results by setting to -1</span><br><span class="line">        top_n_per_article: 1</span><br><span class="line">    &#96;&#96;&#96;  </span><br><span class="line">  </span><br><span class="line">## 重新生成站点:</span><br><span class="line">    &#96;&#96;&#96; bash</span><br><span class="line">    hexo clean</span><br><span class="line">    hexo g</span><br><span class="line">    hexo s</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo-category-config</title>
+    <url>/dipublog/2020/05/30/hexo-category-config/</url>
+    <content><![CDATA[<p>Hexo的Category分类管理文章功能是需要配置以后才会正常显示的。</p>
+<h2 id="创建“分类”选项"><a href="#创建“分类”选项" class="headerlink" title="创建“分类”选项"></a>创建“分类”选项</h2><ol>
+<li><p>生成分类页并添加type属性<br>打开命令行，进入博客所在的文件夹，执行命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>成功后会提示： Info Created: ~/……/blog/source/categories/index.md<br>根据上面提示的路径找到index.md这个文件，打开后修改默认的内容，重点是增加了一样内容：type: “categories”</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date：</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>给文章增加”categories”属性<br>打开需要添加分类的文章，为该文章添加categories属性。hexo文章只能属于一个分类。如果在下面举例中的”-web前端”分类下方添加”-xxx”分类，hexo不会产生两个分类，而是把分类嵌套（该文章属于“-web前端”分类下的”-xxx”分类</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: xxxx</span><br><span class="line">date: xxxx-xx-xx xx:xx:xx</span><br><span class="line">categories:</span><br><span class="line">- web前端</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>

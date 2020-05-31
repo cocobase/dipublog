@@ -2,6 +2,8 @@
 title: Vue学习笔记
 date: 2020-02-28 21:25:23
 tags: [Vue]
+categories:
+- 网站技术
 ---
 
 ## 下载安装Vue的开发环境

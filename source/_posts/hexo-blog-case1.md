@@ -27,3 +27,6 @@ tags: [Hexo,NexT主题]
 8. [hexo高阶教程：教你怎么让你的hexo博客在搜索引擎中排第一](https://www.jianshu.com/p/4f9fc8aafe15)
 9. [hexo常见问的解决](https://www.dazhuanlan.com/2019/12/16/5df69eba9ed3c/)
 10. [Hexo中文开发手册](https://wiki.jikexueyuan.com/project/hexo-document/)国人整理，写的比官方文档易懂一些
+
+## NexT的学习和参考
+1. [NexT配置和优化中国站点](http://theme-next.iissnan.com/)
