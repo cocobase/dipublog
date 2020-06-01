@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.0">
+<meta name="generator" content="Hexo 4.2.1">
   <link rel="apple-touch-icon" sizes="180x180" href="/dipublog/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/dipublog/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/dipublog/images/favicon-16x16-next.png">
@@ -128,6 +128,11 @@
     <a href="/dipublog/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/dipublog/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/dipublog/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
@@ -207,10 +212,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-05-30 16:22:51 / 修改时间：16:48:33" itemprop="dateCreated datePublished" datetime="2020-05-30T16:22:51+08:00">2020-05-30</time>
+              <time title="创建时间：2020-05-30 16:22:51" itemprop="dateCreated datePublished" datetime="2020-05-30T16:22:51+08:00">2020-05-30</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-31 20:10:04" itemprop="dateModified" datetime="2020-05-31T20:10:04+08:00">2020-05-31</time>
+              </span>
 
           <br>
             <span class="post-meta-item" title="本文字数">
@@ -218,14 +229,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>477</span>
+              <span>836</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -242,7 +253,7 @@
 <li><p>生成分类页并添加type属性<br>打开命令行，进入博客所在的文件夹，执行命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
 <p>成功后会提示： Info Created: ~/……/blog/source/categories/index.md<br>根据上面提示的路径找到index.md这个文件，打开后修改默认的内容，重点是增加了一样内容：type: “categories”</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date：</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date：</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">layout: &quot;categories&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br><span class="line">&#96;&#96;&#96;  </span><br><span class="line"></span><br><span class="line">配置theme下面的_config.yml文件，寻找到其中的menu部分，将categories:前面的注释符号去掉，以开启分类菜单</span><br><span class="line">&#96;&#96;&#96; bash</span><br><span class="line">menu:</span><br><span class="line">  home: &#x2F; || home</span><br><span class="line">  #about: &#x2F;about&#x2F; || user</span><br><span class="line">  tags: &#x2F;tags&#x2F; || tags</span><br><span class="line">  categories: &#x2F;categories&#x2F; || th</span><br><span class="line">  archives: &#x2F;archives&#x2F; || archive</span><br><span class="line">  #schedule: &#x2F;schedule&#x2F; || calendar</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>给文章增加”categories”属性<br>打开需要添加分类的文章，为该文章添加categories属性。hexo文章只能属于一个分类。如果在下面举例中的”-web前端”分类下方添加”-xxx”分类，hexo不会产生两个分类，而是把分类嵌套（该文章属于“-web前端”分类下的”-xxx”分类</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: xxxx</span><br><span class="line">date: xxxx-xx-xx xx:xx:xx</span><br><span class="line">categories:</span><br><span class="line">- web前端</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
@@ -1114,6 +1125,7 @@
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/dipublog/categories/">
+          
         <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
@@ -1162,14 +1174,14 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">23k</span>
+    <span title="站点总字数">24k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">42 分钟</span>
+    <span title="站点阅读时长">43 分钟</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.1
   </div>
   <span class="post-meta-divider">|</span>
   <div class="theme-info">主题 – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.7.1
