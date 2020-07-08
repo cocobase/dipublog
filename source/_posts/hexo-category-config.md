@@ -1,6 +1,6 @@
 ---
 layout: hexo文章分类菜单和功能支持的配置
-title: hexo-category-config
+title: hexo文章分类菜单和功能支持的配置
 date: 2020-05-30 16:22:51
 tags: Hexo
 ---

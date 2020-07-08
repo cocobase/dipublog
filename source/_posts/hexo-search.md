@@ -1,6 +1,6 @@
 ---
 layout: hexo博客增加搜索功能
-title: hexo-search
+title: hexo博客增加搜索功能
 date: 2020-05-30 10:48:40
 tags: Hexo
 ---
