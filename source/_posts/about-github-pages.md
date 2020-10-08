@@ -1,8 +1,14 @@
 ---
-title: about-github-pages
+title: 利用Github的Pages创建自己的博客站点
 date: 2020-02-20 20:51:28
+comments: true #是否可以对文章进行评论
+toc: true #是否显示文章的目录结构
 tags:
     - Github
+    - 博客
+categories:
+    - 编程
+permalink: 
 ---
 
 我们可以使用Github的仓库托管关于自己个人博客、组织或者项目的网站。

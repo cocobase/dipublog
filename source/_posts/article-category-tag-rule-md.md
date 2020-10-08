@@ -1,10 +1,14 @@
 ---
-layout: 文章的分类和标签
+layout: 
 title: 文章的分类和标签原则
 date: 2020-06-05 22:47:47
+comments: true
+toc: true
 tags: 
 - 分类
 - 标签
+categories:
+- 博客 
 ---
 
 ## 分类和标签

@@ -196,7 +196,7 @@
           {%- if theme.read_more_btn %}
             <div class="post-button">
               <a class="btn" href="{{ url_for(post.path) }}#more" rel="contents">
-                {{ __('post.read_more') }} &raquo;
+                {{ __('post.read_more') }} &raquo; 
               </a>
             </div>
           {%- endif %}

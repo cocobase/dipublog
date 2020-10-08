@@ -24,7 +24,7 @@
         <div class="content-wrap">
           {% include '_partials/header/sub-menu.swig' %}
           <div class="content">
-            {% block content %}{% endblock %}
+            {% block content %}{% endblock %} 
           </div>
           {% include '_partials/comments.swig' %}
         </div>

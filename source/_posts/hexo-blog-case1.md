@@ -2,7 +2,12 @@
 title: Hexo博客站点收集
 date: 2020-02-18 00:42:55
 tags: [Hexo,NexT主题]
+comments: true
+toc: true
+categories: [博客]
 ---
+
+## Hexo中的Markdown的引用以及代码块和图片的用法
 {% blockquote David Levithan, Wide Awake %}  
     Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.  
 {% endblockquote %}  
@@ -31,3 +36,4 @@ tags: [Hexo,NexT主题]
     
 ## NexT的学习和参考
 1. [NexT配置和优化中国站点](http://theme-next.iissnan.com/)
+2. [hexo next 主题进阶设置](https://zhuanlan.zhihu.com/p/94038688)

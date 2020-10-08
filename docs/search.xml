@@ -20,7 +20,7 @@
       </tags>
   </entry>
   <entry>
-    <title>about-github-pages</title>
+    <title>利用Github的Pages创建自己的博客站点</title>
     <url>/dipublog/2020/02/20/about-github-pages/</url>
     <content><![CDATA[<p>我们可以使用Github的仓库托管关于自己个人博客、组织或者项目的网站。</p>
 <p>本文将介绍Github Pages站点的基本概念：</p>
@@ -46,17 +46,13 @@
 <p>默认情况下，GitHub Pages 将使用 Jekyll 来构建您的站点。 如果您想使用除 Jekyll 以外的静态站点生成器，通过在发布来源的根目录中创建一个名为 .nojekyll 的空文件来禁用 Jekyll 构建过程，然后按照静态站点生成器的说明在 本地构建站点。</p>
 <p>GitHub Pages 不支持服务器端语言，例如 PHP、Ruby 或 Python。</p>
 ]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
       <tags>
         <tag>Github</tag>
+        <tag>博客</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>clone hexo project to local</title>
-    <url>/dipublog/2020/01/31/clone-hexo-project-to-local/</url>
-    <content><![CDATA[<h2 id="from-where"><a href="#from-where" class="headerlink" title="from where"></a>from where</h2><h2 id="how-to-setup-local-enviroment"><a href="#how-to-setup-local-enviroment" class="headerlink" title="how to setup local enviroment"></a>how to setup local enviroment</h2><h2 id="git-command"><a href="#git-command" class="headerlink" title="git command"></a>git command</h2><h2 id="SKILL-by-other"><a href="#SKILL-by-other" class="headerlink" title="SKILL by other"></a>SKILL by other</h2><ol>
-<li><a href="https://zhuanlan.zhihu.com/p/94038688" target="_blank" rel="noopener">hexo next 主题进阶设置</a></li>
-</ol>
-]]></content>
   </entry>
   <entry>
     <title>图片测试博客-Python资源归集</title>
@@ -90,7 +86,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Git精选文章</title>
+    <title>Git和Hexo精选文章</title>
     <url>/dipublog/2020/02/23/git-good-article/</url>
     <content><![CDATA[<h2 id="GIT"><a href="#GIT" class="headerlink" title="GIT"></a>GIT</h2><p>Git本地和远程各种命令之间的关系图示  </p>
 <img src="/dipublog/2020/02/23/git-good-article/git-command.png" class="" title="git图示">   
@@ -99,12 +95,12 @@
 <p><a href="http://www.amdoing.com/static-site-generator-hexo-gitbook-vuepress-and-so-on/" target="_blank" rel="noopener">静态网站生成器Hexo、Gitbook、Vuepress、Docsify、Docute、Nuxt</a>  </p>
 <p><a href="https://zhuanlan.zhihu.com/p/33350221" target="_blank" rel="noopener">使用 Nuxt.js 搭建静态博客</a>  </p>
 <p><a href="https://my.oschina.net/editorial-story/blog/1596258?nocache=1514944531873" target="_blank" rel="noopener">2017 年，最热开源静态网站生成器 TOP 20 揭晓</a>  </p>
-<p><a href="https://www.staticgen.com/" target="_blank" rel="noopener">网站静态生成器清单和热度比较</a><br><a href="https://cloud.tencent.com/developer/article/1142260" target="_blank" rel="noopener">Hexo优化 — 利用 Markdown 语法画流程图</a>  </p>
-<p>  Hexo MarkDown <a href="https://mecono.cn/2578632585.html" target="_blank" rel="noopener">语法示例</a><br>  特殊的流程图和序列图的显示和书写</p>
+<p><a href="https://www.staticgen.com/" target="_blank" rel="noopener">网站静态生成器清单和热度比较</a><br><a href="https://cloud.tencent.com/developer/article/1142260" target="_blank" rel="noopener">Hexo优化 — 利用 Markdown 语法画流程图</a><br>Hexo MarkDown <a href="https://mecono.cn/2578632585.html" target="_blank" rel="noopener">语法示例</a><br>特殊的流程图和序列图的显示和书写</p>
 <h2 id="VUE"><a href="#VUE" class="headerlink" title="VUE"></a>VUE</h2><p><a href="https://www.ctolib.com/mip/topics-143037.html?tt_from=copy_link&utm_source=copy_link&utm_medium=toutiao_ios&utm_campaign=client_share" target="_blank" rel="noopener">Vue友最爱的10个开箱即用的开源项目</a></p>
 ]]></content>
       <tags>
         <tag>Github</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -191,7 +187,7 @@
   <entry>
     <title>Hexo博客站点收集</title>
     <url>/dipublog/2020/02/18/hexo-blog-case1/</url>
-    <content><![CDATA[<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.  </p>
+    <content><![CDATA[<h2 id="Hexo中的Markdown的引用以及代码块和图片的用法"><a href="#Hexo中的Markdown的引用以及代码块和图片的用法" class="headerlink" title="Hexo中的Markdown的引用以及代码块和图片的用法"></a>Hexo中的Markdown的引用以及代码块和图片的用法</h2><blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.  </p>
 <footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>  
 
 <p>以上是关于引用语句的特别用法  </p>
@@ -215,8 +211,12 @@
 </ol>
 <h2 id="NexT的学习和参考"><a href="#NexT的学习和参考" class="headerlink" title="NexT的学习和参考"></a>NexT的学习和参考</h2><ol>
 <li><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">NexT配置和优化中国站点</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/94038688" target="_blank" rel="noopener">hexo next 主题进阶设置</a></li>
 </ol>
 ]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
       <tags>
         <tag>Hexo</tag>
         <tag>NexT主题</tag>
@@ -961,6 +961,9 @@ end.  </code></pre><blockquote>
 </ul>
 <h2 id="个人网站"><a href="#个人网站" class="headerlink" title="个人网站"></a>个人网站</h2><p>分类原则：站在自己的角度看世界，表达自我的主观认知为主要原则。</p>
 ]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
       <tags>
         <tag>分类</tag>
         <tag>标签</tag>
@@ -970,6 +973,7 @@ end.  </code></pre><blockquote>
     <title>python实现wordpress文章自动发布</title>
     <url>/dipublog/2020/06/13/python-publish-wordpress-md/</url>
     <content><![CDATA[<p><a href="https://www.jianshu.com/p/036dcf84d5ac" target="_blank" rel="noopener">python实现WordPress文章发布（一）：环境配置与安装</a><br><a href="https://www.imahui.com/network/557.html" target="_blank" rel="noopener">Python利用xmlrpc-API自动发布文章到Wordpress</a></p>
+<p><a href="https://medium.com/employbl/create-a-custom-blog-theme-with-hexo-js-b24c82eb9271" target="_blank" rel="noopener">Hexo定制皮肤的基本知识</a><br><a href="http://www.codeblocq.com/2016/03/Create-an-Hexo-Theme-Part-1-Index/" target="_blank" rel="noopener">学习如何从头开始创建一个Hexo皮肤 </a><br><a href="https://xinetzone.github.io/zh-CN/3567ebbb.html" target="_blank" rel="noopener">如何修改 hexo-theme-matery 模板</a><br>[官方文档中的变量定义] (<a href="https://hexo.io/docs/variables" target="_blank" rel="noopener">https://hexo.io/docs/variables</a>)<br><a href="https://wasteland.touko.moe/blog/2020/03/customize-hexo/" target="_blank" rel="noopener">Customize Hexo and Theme NexT</a>干货颇多，定制字体和评论有特色 </p>
 ]]></content>
       <tags>
         <tag>Python</tag>
@@ -984,6 +988,18 @@ end.  </code></pre><blockquote>
 ]]></content>
       <tags>
         <tag>云服务器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python实现微博的文章发布</title>
+    <url>/dipublog/2020/07/26/python-weibo-sdk/</url>
+    <content><![CDATA[<h1 id="常用的一些案例和学习材料"><a href="#常用的一些案例和学习材料" class="headerlink" title="常用的一些案例和学习材料"></a>常用的一些案例和学习材料</h1><p><a href="https://cloud.tencent.com/developer/article/1600568" target="_blank" rel="noopener">利用Python实现自动化运维新浪微博</a><br><a href="https://pypi.org/project/weibo/" target="_blank" rel="noopener">Python新浪微博SDK</a><br><a href="https://www.jianshu.com/p/0f20eaaa0047" target="_blank" rel="noopener">用python发微博</a><br><a href="https://github.com/Fireplusplus/share_weibo" target="_blank" rel="noopener">Github share weibo project</a><br><a href="https://juejin.im/post/5e5b22db518825494707e77f" target="_blank" rel="noopener">Python 教你自动发微博</a><br><a href="https://blog.csdn.net/taonull/article/details/48054721" target="_blank" rel="noopener">Python代码登录新浪微博并自动发微博</a>代码使用纯Python实现，没有使用微博SDK，主要是模拟HTTP操作。程序运行后会先登录微博，然后启动一个定时器，每隔一段时间爬取秒拍、cnBeta、博客园、TechWeb、推酷最新的内容，再转发到微博。<br><a href="https://zhuanlan.zhihu.com/p/141416106" target="_blank" rel="noopener">Python 超简单爬取新浪微博数据 (高级版)</a></p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
 </search>
